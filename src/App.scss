@@ -1,0 +1,377 @@
+$primary-color: #607FAB;
+$accent-color: #F7B002;
+$light-color: rgba(227,240,248,0.4);
+$header-color: #83A0C5;
+$accent-hover-color: #FFC842;
+$semi-bold: 600;
+$bold: 700;
+$medium: 500;
+$app-width: 960px;
+$column-width: 80px;
+
+.app {
+	text-align: center;
+	font-family: 'Raleway';
+
+	* {
+		box-sizing: border-box;
+	}
+
+	a, a:hover, a:visited {
+		text-decoration: none;
+	}
+}
+
+header {
+  position: fixed;
+  height: 72px;
+  left: 0;
+  top: 0;
+  background-color: $header-color;
+  width: 100%;
+  z-index: 1;
+
+  nav {
+  	width: $app-width;
+  	margin: 0 auto;
+  
+  	a + a {
+  		margin-left: 30px;
+  	}
+  	
+  	.links {
+  		display: inline-block;
+  		float: right;
+  		margin-right: 20px;
+  	}
+  }
+
+  a {
+  	color: white;
+    margin-top: 27px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: $medium;
+
+  	&:hover {
+  		color: $accent-color;
+  	};	
+  
+  	&.logoLink {
+  		float: left;
+		margin: 14px 0 0 20px;
+  	}
+  }
+}
+
+main {
+  display: block;
+  margin-top: 72px;
+  min-height: 600px;
+}
+
+footer {
+  background-color: $header-color;
+  color: white;
+  display: block;
+  padding-bottom: 30px;
+  width: 100%;
+
+  .footer__content {
+  	width: $app-width;
+  	margin: 0 auto;
+  	&__wrapper {
+  		text-align: left;
+  	}
+
+  	&__logo {
+  		display: inline-block;
+		margin: 30px 0 0 20px;
+  		width: 50%;
+  		@media (max-width: 720px) {
+  			display: block;
+  		}
+  	}
+
+  	&__contacts {
+  		display: inline-block;
+  		@media (max-width: 720px) {
+  			display: block;
+  		}
+  	}
+
+  	&__text {
+		font-size: 14px;
+		line-height: 26px;
+		display: block;
+		a, a:hover, a:visited {
+			color: white;
+			text-decoration: none;
+		}
+  	}
+
+  	&__copyrights {
+  		display: block;
+  		font-size: 10px;
+  		margin: 30px;
+  		width: 100%;
+  		text-align: center;
+  	}
+  }
+
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.logo {
+	display: inline-block;
+	text-align: left;
+	span {
+		display: block;
+		font-size: 14px;
+		padding-bottom: 6px;
+		font-family: 'Raleway';
+		&.name {
+			font-size: 18px;
+			font-weight: $bold;
+		}
+	}
+}  
+
+.homepage {
+	&__topBanner {
+		background: $header-color;
+		background: linear-gradient(180deg, $header-color 0%, rgba(166,186,218,1) 100%);
+		height: 398px;
+		position: relative;
+		width: 100%;
+		color: white;
+
+		&__quote {
+			font-weight: $medium;
+			font-style: italic;
+			font-size: 50px;
+			max-width: 588px;
+		    white-space: normal;
+		    margin-top: 50px;
+		    display: inline-block;
+		    line-height: 60px;
+		}
+
+		&__image {
+			position: absolute;
+		    bottom: -20px;
+		    left: 25%;
+		    width: 50%;
+		}
+	}
+
+	&__title {
+		font-size: 30px;
+		font-weight: $medium;
+		color: $primary-color;
+		width: 588px;
+    	display: inline-block;
+    	line-height: 40px;
+    	margin-top: 60px;
+	}
+
+	&__belt {
+		background-color: $light-color;
+		padding: 60px 0;
+		margin: 50px 0 0;
+
+		&__container {
+			display: flex;
+			margin: 0 auto;
+			width: $app-width;
+
+			&.flexColumn {
+				flex-direction: column;
+			}
+		}
+
+		&__content {
+			width: 480px;
+			text-align: left;
+			display: inline-block;
+			padding: 0 20px;
+		}
+
+		&__title {
+			display: inline-block;
+		}
+		
+		&__text {
+			white-space: normal;
+		}
+
+		&__carousel {
+			width: 80%;
+			display: inline-block;
+			float: right;
+
+			.slick-dots li {
+				margin: 0;
+			}
+
+			.slick-dots li button:before {
+				color: white;
+				opacity: 1;
+				font-size: 8px;
+			}
+
+			.slick-dots li.slick-active button:before {
+				color: $accent-color;
+			}
+		}
+
+		&__icons {
+			display: flex;
+			flex-wrap: wrap;
+			width: $app-width;
+			margin: 0 auto;
+		}
+
+		&__icon {
+			width: $column-width * 2;
+			img {
+				width: 100px,
+			}
+
+			&__caption {
+				white-space: normal;
+				color: $primary-color;
+			}
+		}
+	}
+
+	&__quote {
+		padding: 100px 0;
+		color: $primary-color;
+		width: 100%;
+		q {
+			margin: 0 auto;
+		}
+	}
+
+	&__author {
+		display: block;
+		font-size: 14px;
+		margin-top: 20px;
+	}
+}
+
+.who {
+	&__banner {
+		height: 400px;
+		width: 100%;
+	}
+	
+	&__quote {
+		h1 {
+			width: $column-width*8;
+			margin: 0 auto;
+			color: $primary-color;
+			font-size: 30px;
+			line-height: 45px;
+			font-style: italic;
+			font-weight: $medium;
+			white-space: normal;
+			display: inline-block;
+		}
+		.link {
+			font-size: 30px;
+			line-height: 40px;
+			font-style: italic;
+			font-weight: $medium;
+			white-space: normal;
+			display: inline-block;
+			margin-top: 0;
+		}
+	}
+	&__text {
+		width: $column-width*10;
+		margin: 0 auto;
+		text-align: left;
+	}
+	&__studies {
+		background-color: $light-color;
+		padding: 60px 0;
+		margin: 50px 0 0;
+
+		&__content {
+			text-align: left;
+			width: $app-width;
+			margin: 0 auto;
+			padding-left: 20px;
+		}
+
+		&__wrapper {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+
+			&__year {
+				width: $column-width*3;
+    			margin-top: 30px;
+    			padding-left: 30px;
+			}
+
+			&__activity {
+				width: $column-width*8;
+				margin-top: 23px;
+			}
+		}
+	}
+}
+
+h2 {
+	font-weight: $medium;
+	font-size: 36px;
+	line-height: 46px;
+	color: $accent-color;
+}
+
+h3 {
+	font-weight: 800;
+	font-size: 42px;
+	line-height: 50px;
+	color: $primary-color;
+}
+
+p {
+	font-size: 16px;
+	line-height: 28px;
+	color: $primary-color;
+}
+
+q {
+	font-size: 30px;
+	line-height: 40px;
+	font-style: italic;
+	font-weight: $medium;
+	white-space: normal;
+	display: inline-block;
+}
+
+.tenColumnWidth {
+	width: $column-width * 10;
+}
+
+.link {
+	color: $accent-color;
+	font-size: 18px;	
+	margin-top: 20px;
+	font-weight: $semi-bold;
+	display: block;
+	&:hover {
+		color: $accent-hover-color;
+	}
+
+	&:visited {
+		color: $accent-color;
+	};
+}
