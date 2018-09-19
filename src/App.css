@@ -34,6 +34,8 @@ header {
     header a.logoLink {
       float: left;
       margin: 14px 0 0 20px; }
+    header a.active {
+      color: #F7B002; }
 
 main {
   display: block;
@@ -181,7 +183,10 @@ footer {
 
 .who__banner {
   height: 400px;
-  width: 100%; }
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .who__quote h1 {
   width: 640px;
@@ -229,11 +234,24 @@ footer {
       width: 640px;
       margin-top: 23px; }
 
+.page {
+  padding-top: 60px;
+  width: 960px;
+  margin: 0 auto; }
+
+.what .pageTitle {
+  margin-bottom: 30px;
+  text-align: left; }
+
 h2 {
   font-weight: 500;
   font-size: 36px;
   line-height: 46px;
-  color: #F7B002; }
+  color: #F7B002;
+  margin: 0; }
+  h2.pageTitle {
+    font-size: 50px;
+    line-height: 50px; }
 
 h3 {
   font-weight: 800;
@@ -245,6 +263,9 @@ p {
   font-size: 16px;
   line-height: 28px;
   color: #607FAB; }
+  p.pageText {
+    font-size: 20px;
+    line-height: 30px; }
 
 q {
   font-size: 30px;
@@ -267,3 +288,15 @@ q {
     color: #FFC842; }
   .link:visited {
     color: #F7B002; }
+
+.bullets {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .bullets .bulletPortrait {
+    display: flex;
+    flex-direction: column;
+    width: 240px; }
+    .bullets .bulletPortrait img {
+      width: 150px;
+      height: 150px; }

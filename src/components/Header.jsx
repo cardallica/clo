@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import Logo from './Logo';
 
 const Header = (props) => (
@@ -12,18 +12,18 @@ const Header = (props) => (
 				<Logo />
 			</Link>
 			<div className="links">
-				<Link to="/chi-sono">
+				<NavLink to="/chi-sono">
 					Chi Sono
-				</Link>
-				<Link to="/cosa-faccio">
+				</NavLink>
+				<NavLink to="/cosa-faccio">
 					Cosa Faccio
-				</Link>
-				<Link to="/psicologo">
+				</NavLink>
+				<NavLink to="/psicologo">
 					Lo Psicologo
-				</Link>
-				<Link to="/contatti">
+				</NavLink>
+				<NavLink to="/contatti">
 					Contatti
-				</Link> 
+				</NavLink>
 			</div>
 		</nav>
 	</header>
