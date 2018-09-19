@@ -292,11 +292,19 @@ q {
 .bullets {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin: 95px 0 80px; }
   .bullets .bulletPortrait {
+    align-items: center;
     display: flex;
     flex-direction: column;
     width: 240px; }
     .bullets .bulletPortrait img {
       width: 150px;
       height: 150px; }
+    .bullets .bulletPortrait span {
+      color: #607FAB;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
+      padding: 10px; }
