@@ -10,17 +10,17 @@ export default class HomePage extends React.Component {
 	render() {
 		return (
 			<div className="homepage">
-				<div className="homepage__topBanner">
-					<q className="homepage__topBanner__quote">
+				<div className="topBanner">
+					<q className="topBanner__quote">
 						Le cose non cambiano, siamo noi che cambiamo
 					</q>
-					<span className="homepage__author">
+					<span className="topBanner__author">
 						H. D. Thoreau
 					</span>
 					<img
 						src={HomePageHero}
 						alt="hero homepage"
-						className="homepage__topBanner__image"
+						className="topBanner__image"
 					/>
 				</div>
 				<h1 className="homepage__title">
@@ -31,7 +31,7 @@ export default class HomePage extends React.Component {
 				<Link className="link" to="/chi-sono">
 					Di più su di me...
 				</Link>
-				<div className="homepage__belt">
+				<div className="homepage__belt lightBackground">
 					<div className="homepage__belt__container">
 						<div className="homepage__belt__content">
 							<h2 className="homepage__belt__title">

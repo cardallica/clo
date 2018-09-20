@@ -94,28 +94,6 @@ footer {
       font-size: 18px;
       font-weight: 700; }
 
-.homepage__topBanner {
-  background: #83A0C5;
-  background: linear-gradient(180deg, #83A0C5 0%, #a6bada 100%);
-  height: 398px;
-  position: relative;
-  width: 100%;
-  color: white; }
-  .homepage__topBanner__quote {
-    font-weight: 500;
-    font-style: italic;
-    font-size: 50px;
-    max-width: 588px;
-    white-space: normal;
-    margin-top: 50px;
-    display: inline-block;
-    line-height: 60px; }
-  .homepage__topBanner__image {
-    position: absolute;
-    bottom: -20px;
-    left: 25%;
-    width: 50%; }
-
 .homepage__title {
   font-size: 30px;
   font-weight: 500;
@@ -126,7 +104,6 @@ footer {
   margin-top: 60px; }
 
 .homepage__belt {
-  background-color: rgba(227, 240, 248, 0.4);
   padding: 60px 0;
   margin: 50px 0 0; }
   .homepage__belt__container {
@@ -234,6 +211,56 @@ footer {
       width: 640px;
       margin-top: 23px; }
 
+.topBanner {
+  background: #83A0C5;
+  background: linear-gradient(180deg, #83A0C5 0%, #a6bada 100%);
+  min-height: 398px;
+  position: relative;
+  width: 100%;
+  color: white; }
+  .topBanner__quote {
+    display: inline-block;
+    font-style: italic;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-top: 50px;
+    max-width: 588px;
+    white-space: normal; }
+  .topBanner__text {
+    display: inline-block;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    max-width: 800px;
+    white-space: normal; }
+  .topBanner__author {
+    display: block;
+    font-size: 14px;
+    margin-top: 20px; }
+  .topBanner__image {
+    position: absolute;
+    bottom: -20px;
+    left: 25%;
+    width: 50%; }
+
+.psychiatrist__content {
+  padding: 60px 0 80px; }
+
+.psychiatrist__table__row {
+  display: block; }
+
+.psychiatrist__table__smallColumn {
+  padding: 0 30px;
+  width: 240px; }
+
+.psychiatrist__table__largeColumn {
+  padding: 0 30px;
+  width: 720px; }
+
 .page {
   padding-top: 60px;
   width: 960px;
@@ -290,6 +317,7 @@ q {
     color: #F7B002; }
 
 .bullets {
+  cursor: pointer;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -308,3 +336,6 @@ q {
       font-weight: 500;
       line-height: 24px;
       padding: 10px; }
+
+.lightBackground {
+  background-color: rgba(227, 240, 248, 0.4); }

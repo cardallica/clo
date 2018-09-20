@@ -146,33 +146,6 @@ footer {
 }  
 
 .homepage {
-	&__topBanner {
-		background: $header-color;
-		background: linear-gradient(180deg, $header-color 0%, rgba(166,186,218,1) 100%);
-		height: 398px;
-		position: relative;
-		width: 100%;
-		color: white;
-
-		&__quote {
-			font-weight: $medium;
-			font-style: italic;
-			font-size: 50px;
-			max-width: 588px;
-		    white-space: normal;
-		    margin-top: 50px;
-		    display: inline-block;
-		    line-height: 60px;
-		}
-
-		&__image {
-			position: absolute;
-		    bottom: -20px;
-		    left: 25%;
-		    width: 50%;
-		}
-	}
-
 	&__title {
 		font-size: 30px;
 		font-weight: $medium;
@@ -184,7 +157,6 @@ footer {
 	}
 
 	&__belt {
-		background-color: $light-color;
 		padding: 60px 0;
 		margin: 50px 0 0;
 
@@ -336,6 +308,73 @@ footer {
 	}
 }
 
+.topBanner {
+  background: $header-color;
+  background: linear-gradient(180deg, $header-color 0%, rgba(166,186,218,1) 100%);
+  min-height: 398px;
+  position: relative;
+  width: 100%;
+  color: white;
+
+  &__quote {
+    display: inline-block;
+    font-style: italic;
+    font-size: 50px;
+    font-weight: $medium;
+    line-height: 60px;
+    margin-top: 50px;
+    max-width: 588px;
+    white-space: normal;
+  }
+
+  &__text {
+    display: inline-block;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: $medium;
+    line-height: 40px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    max-width: $column-width * 10;
+    white-space: normal;
+  }
+
+  &__author {
+    display: block;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  &__image {
+    position: absolute;
+    bottom: -20px;
+    left: 25%;
+    width: 50%;
+  }
+}
+
+.psychiatrist {
+  &__content {
+    padding: 60px 0 80px;
+  }
+
+  &__table {
+    &__row {
+      display: block;
+    }
+
+    &__smallColumn {
+      padding: 0 $gutter-width;
+      width: $column-width * 3;
+    }
+
+    &__largeColumn {
+      padding: 0 $gutter-width;
+      width: $column-width * 9;
+    }
+  }
+}
+
 .page {
   padding-top: 60px;
   width: $app-width;
@@ -409,6 +448,7 @@ q {
 }
 
 .bullets {
+  cursor: pointer;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -433,4 +473,8 @@ q {
       padding: 10px;
     }
   }
+}
+
+.lightBackground {
+  background-color: $light-color;
 }
