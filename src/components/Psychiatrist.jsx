@@ -1,13 +1,13 @@
 import React from 'react';
 
-const TableRow = ({ smallText, largeText }) => (
+const TableRow = ({ title, children }) => (
     <div className="psychiatrist__table__row">
-        <div className="psychiatrist__table__smallColumn">
-            {smallText}
-        </div>
-        <div className="psychiatrist__table__largeColumn">
-            {largeText}
-        </div>
+        <aside className="psychiatrist__table__smallColumn">
+            {title}
+        </aside>
+        <article className="psychiatrist__table__largeColumn">
+            {children}
+        </article>
     </div>
 );
 
@@ -56,7 +56,65 @@ export default class PhychiatristPage extends React.Component {
                                     </p>
                                 }
                             </TableRow>
+                            <TableRow
+                                title={"come"}
+                            >
+                                {
+                                    <p>
+                                        Lo strumento principe dello psicologo è il colloquio e l'utilizzo di domande:
+                                        porsi e porre domande attiva e stimola il processo di pensiero.
+                                        Infatti, non sono tanto importanti  le risposte in sè, quanto
+                                        piuttosto il fatto che, nel percorso di terapia, ci si interroghi su strategie
+                                        e visioni alternative del problema, cominciando a fare collegamenti,
+                                        riconoscendo e individuando i "nodi" della propria storia e, trovando chiavi
+                                        interpretative nuove e differenti rispetto ai soliti modelli operativi.
+                                        Nei momenti di crisi, la visione della propria condizione subisce
+                                        un irrigidimento, impedendo di ipotizzare qualunque tipo di cambiamento:
+                                        ci si sente senza possibilità, si svalutano le proprie risorse e si perde
+                                        la consapevolezza del  ruolo attivo che ognuno di noi gioca nelle diverse
+                                        situazioni e nel mantenimento di queste.
+                                        Ecco perché, in terapia, si cerca di coinvolgere e stimolare a un livello
+                                        sia emotivo che cognitivo:  riuscire a mettere in discussione le strategie
+                                        e le soluzioni adottate, ampliare la visione delle cose,
+                                        accrescere la flessibilità, fornire diverse possibilità
+                                        interpretative e di scelta, aiutano le persone ad approcciarsi
+                                        alla propria condizione di disagio in modo nuovo, più adeguato e funzionale.
+                                    </p>
+                                }
+                            </TableRow>
+                            <TableRow
+                                title="perchè"
+                            >
+                                {
+                                    <p>
+                                        Rivolgersi ad uno psicologo non è un segno di debolezza o
+                                        di scarsa indipendenza, quanto, piuttosto, indice di consapevolezza
+                                        del proprio malessere e desiderio di lavorare sulle motivazioni
+                                        che impediscono il cambiamento e contribuiscono al mantenimento
+                                        della propria condizione di disagio o sofferenza.psicologo.
+                                    </p>
+                                }
+                            </TableRow>
                         </div>
+                        <div className="homepage__quote">
+                            <q className="tenColumnWidth">
+                                Il paziente, il miglior <strong>collega</strong>
+                            </q>
+                            <span className="homepage__author">
+                                Wilfred R. Bion
+                            </span>
+                        </div>
+                        <p className="pageText">
+                            È importante sottolineare che lo psicologo non trova le soluzioni al posto
+                            della persona - perché sarebbero soluzioni adatte a lui e non a chi si rivolge a lui -
+                            ma mette a disposizione la propria formazione e professionalità per permettere di capire
+                            cosa impedisca il superamento di una data situazione, cosa si opponga inconsapevolmente
+                            al raggiungimento di quello cui si aspira o cosa mette in uno stato
+                            di conflitto interiore e perché.
+                            In altre parole, lo psicologo accompagna la persona in un "viaggio" che, ampliando le
+                            possibilità di visione e interpretazione della situazione, aiuta a vedere il problema
+                            con occhi diversi, facilitando la consapevolezza, l'evoluzione e il cambiamento.
+                        </p>
                     </div>
                 </div>
 			</div>

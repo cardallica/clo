@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HomePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomePage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Psychiatrist.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Psychiatrist.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,11 +20,12 @@
     <session id="-238877981">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -33,7 +33,7 @@
           <entry key="css" value="3" />
           <entry key="js" value="4" />
           <entry key="json" value="6" />
-          <entry key="jsx" value="8" />
+          <entry key="jsx" value="9" />
           <entry key="md" value="2" />
           <entry key="png" value="1" />
           <entry key="scss" value="2" />
@@ -44,7 +44,7 @@
           <entry key="CSS" value="3" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="6" />
-          <entry key="JSX Harmony" value="8" />
+          <entry key="JSX Harmony" value="9" />
           <entry key="JavaScript" value="4" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
@@ -54,15 +54,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="json" value="40" />
-          <entry key="jsx" value="1315" />
-          <entry key="scss" value="835" />
+          <entry key="jsx" value="1412" />
+          <entry key="scss" value="913" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="40" />
-          <entry key="JSX Harmony" value="1315" />
-          <entry key="SCSS" value="835" />
+          <entry key="JSX Harmony" value="1412" />
+          <entry key="SCSS" value="913" />
         </counts>
       </usages-collector>
     </session>
@@ -72,8 +72,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Psychiatrist.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="34" column="48" lean-forward="true" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
+            <state relative-caret-position="498">
+              <caret line="106" column="46" selection-start-line="106" selection-start-column="46" selection-end-line="106" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/HomePage.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="59" column="16" selection-start-line="59" selection-start-column="16" selection-end-line="68" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -81,8 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="366" selection-start-line="366" selection-end-line="366" />
+            <state relative-caret-position="324">
+              <caret line="429" column="14" selection-start-line="429" selection-start-column="6" selection-end-line="429" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -102,6 +111,7 @@
       <find>#E3F0F8</find>
       <find>$light-color</find>
       <find>belt</find>
+      <find>smallC</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -149,7 +159,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -184,6 +193,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -219,18 +229,19 @@
       <workItem from="1537343466572" duration="2558000" />
       <workItem from="1537346377722" duration="351000" />
       <workItem from="1537347094237" duration="644000" />
-      <workItem from="1537425204650" duration="2474000" />
+      <workItem from="1537425204650" duration="2515000" />
+      <workItem from="1537511402824" duration="1948000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8091000" />
+    <option name="totallyTimeSpent" value="10080000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1600" y="25" width="1920" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -244,7 +255,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3326087" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.33369565" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -322,9 +333,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -332,16 +340,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/HomePage.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="33" column="62" selection-start-line="33" selection-start-column="62" selection-end-line="33" selection-end-column="62" />
         </state>
       </provider>
     </entry>
@@ -350,17 +348,24 @@
         <state relative-caret-position="-864" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/HomePage.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="59" column="16" selection-start-line="59" selection-start-column="16" selection-end-line="68" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="366" selection-start-line="366" selection-end-line="366" />
+        <state relative-caret-position="324">
+          <caret line="429" column="14" selection-start-line="429" selection-start-column="6" selection-end-line="429" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Psychiatrist.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="34" column="48" lean-forward="true" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
+        <state relative-caret-position="498">
+          <caret line="106" column="46" selection-start-line="106" selection-start-column="46" selection-end-line="106" selection-end-column="46" />
         </state>
       </provider>
     </entry>

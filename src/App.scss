@@ -359,18 +359,32 @@ footer {
   }
 
   &__table {
+    margin-top: 60px;
+
     &__row {
-      display: block;
+      display: flex;
     }
 
     &__smallColumn {
-      padding: 0 $gutter-width;
+      padding: 10px $gutter-width;
       width: $column-width * 3;
+      color: $primary-color;
+      display: inline-block;
+      font-size: 50px;
+      font-weight: 800;
+      line-height: 59px;
+      text-transform: capitalize;
     }
 
     &__largeColumn {
       padding: 0 $gutter-width;
       width: $column-width * 9;
+      color: $primary-color;
+      display: inline-block;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 30px;
+      text-align: left;
     }
   }
 }
