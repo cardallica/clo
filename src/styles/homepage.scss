@@ -1,0 +1,95 @@
+.homepage {
+	&__title {
+		font-size: 30px;
+		font-weight: $medium;
+		color: $primary-color;
+		width: 588px;
+    	display: inline-block;
+    	line-height: 40px;
+    	margin-top: 60px;
+	}
+
+	&__belt {
+		padding: 60px 0;
+		margin: 50px 0 0;
+
+		&__container {
+			display: flex;
+			margin: 0 auto;
+			width: $app-width;
+
+			&.flexColumn {
+				flex-direction: column;
+			}
+		}
+
+		&__content {
+			width: 480px;
+			text-align: left;
+			display: inline-block;
+			padding: 0 20px;
+		}
+
+		&__title {
+			display: inline-block;
+		}
+		
+		&__text {
+			white-space: normal;
+		}
+
+		&__carousel {
+			width: 80%;
+			display: inline-block;
+			float: right;
+
+			.slick-dots li {
+				margin: 0;
+			}
+
+			.slick-dots li button:before {
+				color: white;
+				opacity: 1;
+				font-size: 8px;
+			}
+
+			.slick-dots li.slick-active button:before {
+				color: $accent-color;
+			}
+		}
+
+		&__icons {
+			display: flex;
+			flex-wrap: wrap;
+			width: $app-width;
+			margin: 0 auto;
+		}
+
+		&__icon {
+			width: $column-width * 2;
+			img {
+				width: 100px,
+			}
+
+			&__caption {
+				white-space: normal;
+				color: $primary-color;
+			}
+		}
+	}
+
+	&__quote {
+		padding: 100px 0;
+		color: $primary-color;
+		width: 100%;
+		q {
+			margin: 0 auto;
+		}
+	}
+
+	&__author {
+		display: block;
+		font-size: 14px;
+		margin-top: 20px;
+	}
+}

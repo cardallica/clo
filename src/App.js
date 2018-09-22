@@ -11,7 +11,8 @@ import {
   BrowserRouter as Router,
   Route,
 } from 'react-router-dom'
-import './App.css';
+
+import './styles/base.scss';
 
 class App extends Component {
   render() {

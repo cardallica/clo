@@ -351,3 +351,6 @@ q {
 
 .lightBackground {
   background-color: rgba(227, 240, 248, 0.4); }
+
+.contacts__list {
+  list-style-type: none; }
