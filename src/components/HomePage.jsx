@@ -6,8 +6,6 @@ import ansiaImg from '../assets/ansia.png';
 import conflittiImg from '../assets/conflitti.png';
 import autostimaImg from '../assets/autostima.png';
 
-import '../styles/homepage.scss';
-
 export default class HomePage extends React.Component {
 	render() {
 		return (

@@ -1,0 +1,68 @@
+@import './variables.scss';
+
+.who {
+  &__banner {
+    height: 400px;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__quote {
+    h1 {
+      width: $column-width*8;
+      margin: 0 auto;
+      color: $primary-color;
+      font-size: 30px;
+      line-height: 45px;
+      font-style: italic;
+      font-weight: $medium;
+      white-space: normal;
+      display: inline-block;
+    }
+    .link {
+      font-size: 30px;
+      line-height: 40px;
+      font-style: italic;
+      font-weight: $medium;
+      white-space: normal;
+      display: inline-block;
+      margin-top: 0;
+    }
+  }
+  &__text {
+    width: $column-width*10;
+    margin: 0 auto;
+    text-align: left;
+  }
+  &__studies {
+    background-color: $light-color;
+    padding: 60px 0;
+    margin: 50px 0 0;
+
+    &__content {
+      text-align: left;
+      width: $app-width;
+      margin: 0 auto;
+      padding-left: 20px;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      &__year {
+        width: $column-width*3;
+        margin-top: 30px;
+        padding-left: 30px;
+      }
+
+      &__activity {
+        width: $column-width*8;
+        margin-top: 23px;
+      }
+    }
+  }
+}

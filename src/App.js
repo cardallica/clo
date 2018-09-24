@@ -12,7 +12,7 @@ import {
   Route,
 } from 'react-router-dom'
 
-import './styles/base.scss';
+require('./App.css');
 
 class App extends Component {
   render() {

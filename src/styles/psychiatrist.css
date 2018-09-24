@@ -1,0 +1,25 @@
+.psychiatrist__content {
+  padding: 60px 0 80px; }
+
+.psychiatrist__table {
+  margin-top: 60px; }
+  .psychiatrist__table__row {
+    display: flex; }
+  .psychiatrist__table__smallColumn {
+    padding: 10px 30px;
+    width: 240px;
+    color: #607FAB;
+    display: inline-block;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 59px;
+    text-transform: capitalize; }
+  .psychiatrist__table__largeColumn {
+    padding: 0 30px;
+    width: 720px;
+    color: #607FAB;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left; }
