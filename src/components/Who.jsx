@@ -6,7 +6,7 @@ export default class WhoPage extends React.Component {
 	render() {
 		const styleBanner = {
 			backgroundImage: `url(${FotoClo})` 
-		}
+		};
 		return (
 			<div className="who">
 				<div
@@ -14,14 +14,14 @@ export default class WhoPage extends React.Component {
 					style={styleBanner}
 				/>
 				<div className="who__quote">
-					<h1>
+					<h1 className="eightColumnWidth">
 						Sono una <strong>Psicologa-Psicoterapeuta. </strong>
 						Vivo e lavoro a <strong>Lissone</strong> e ricevo nel mio
 						studio in via
 						<Link className="link" to="/contatti"> Matteotti 1.</Link>
 					</h1>
 				</div>
-				<div className="who__text">
+				<div className="who__text tenColumnWidth">
 					<p>
 					Come Psicoterapeuta seguo<strong> adulti, coppie e famiglie</strong>, sia in percorsi di terapia 
 					che di consulenza.
@@ -52,15 +52,15 @@ export default class WhoPage extends React.Component {
 					</p>
 				</div>
 				<div className="who__studies">
-					<div className="who__studies__content">
+					<div className="who__studies__content page">
 						<h2>
 						La mia formazione
 						</h2>
 						<div className="who__studies__wrapper">
-							<h3 className="who__studies__wrapper__year">
+							<h3 className="who__studies__wrapper__year threeColumnWidth">
 							2006
 							</h3>
-							<div className="who__studies__wrapper__activity">
+							<div className="who__studies__wrapper__activity eightColumnWidth">
 							<p>
 							Mi sono laureata in <strong>Psicologia Clinica e di Comunità</strong> presso l'università 
 							degli studi Milano Bicocca con una tesi dal titolo 
@@ -76,10 +76,10 @@ export default class WhoPage extends React.Component {
 							favorire l'utilizzo di nuove strategie e risorse psicologiche adattive.
 							</p>
 							</div>
-							<h3 className="who__studies__wrapper__year">
+							<h3 className="who__studies__wrapper__year threeColumnWidth">
 							2007
 							</h3>
-							<div className="who__studies__wrapper__activity">
+							<div className="who__studies__wrapper__activity eightColumnWidth">
 							<p>
 							A seguito del superamento dell'esame di stato, sono <strong> abilitata</strong> 
 							alla <strong> professione di psicologa</strong>. 
@@ -96,10 +96,10 @@ export default class WhoPage extends React.Component {
 							pregresse o attuali.
 							</p>
 							</div>
-							<h3 className="who__studies__wrapper__year">
+							<h3 className="who__studies__wrapper__year threeColumnWidth">
 							2009
 							</h3>
-							<div className="who__studies__wrapper__activity">
+							<div className="who__studies__wrapper__activity eightColumnWidth">
 							<p>
 							Dal <strong>2009</strong> svolgo attività di <strong> psicologa/psicoterapeuta</strong>
 							 presso il <strong>consultorio Genitori Oggi</strong> attraverso percorsi 
@@ -132,10 +132,10 @@ export default class WhoPage extends React.Component {
 							rielaborazione di questo cammino emotivamente e relazionalmente molto complesso.
 							</p>
 							</div>
-							<h3 className="who__studies__wrapper__year">
+							<h3 className="who__studies__wrapper__year threeColumnWidth">
 							2012
 							</h3>
-							<div className="who__studies__wrapper__activity">
+							<div className="who__studies__wrapper__activity eightColumnWidth">
 							<p>
 							Nel <strong>2012</strong> ho lavorato per l'<strong>Unità Operativa di Psicologia Clinica 
 							dell' Azienda Ospedaliera San Gerardo</strong>, presso la casa circondariale di 
@@ -153,10 +153,10 @@ export default class WhoPage extends React.Component {
 							dello sviluppo e del benessere infantile.
 							</p>
 							</div>
-							<h3 className="who__studies__wrapper__year">
+							<h3 className="who__studies__wrapper__year threeColumnWidth">
 							2017
 							</h3>
-							<div className="who__studies__wrapper__activity">
+							<div className="who__studies__wrapper__activity eightColumnWidth">
 							<p>
 							Da settembre <strong>2017</strong> lavoro come <strong>Psicologa Psicoterapeuta</strong> presso il 
 							<strong> "Centro per la Famiglia"</strong> di Sesto, svolgendo percorsi di sostegno, 

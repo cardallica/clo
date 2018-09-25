@@ -167,9 +167,6 @@ q {
   white-space: normal;
   display: inline-block; }
 
-.tenColumnWidth {
-  width: 800px; }
-
 .link {
   color: #F7B002;
   font-size: 18px;
@@ -205,6 +202,42 @@ q {
 .lightBackground {
   background-color: rgba(227, 240, 248, 0.4); }
 
+.twoColumnWidth {
+  width: 100%; }
+  @media (min-width: 960px) {
+    .twoColumnWidth {
+      width: 160px; } }
+
+.threeColumnWidth {
+  width: 100%; }
+  @media (min-width: 960px) {
+    .threeColumnWidth {
+      width: 240px; } }
+
+.sixColumnWidth {
+  width: 100%; }
+  @media (min-width: 960px) {
+    .sixColumnWidth {
+      width: 480px; } }
+
+.eightColumnWidth {
+  width: 100%; }
+  @media (min-width: 960px) {
+    .eightColumnWidth {
+      width: 640px; } }
+
+.nineColumnWidth {
+  width: 100%; }
+  @media (min-width: 960px) {
+    .nineColumnWidth {
+      width: 720px; } }
+
+.tenColumnWidth {
+  width: 100%; }
+  @media (min-width: 960px) {
+    .tenColumnWidth {
+      width: 800px; } }
+
 .contacts__list {
   list-style-type: none; }
 
@@ -212,7 +245,6 @@ q {
   font-size: 30px;
   font-weight: 500;
   color: #607FAB;
-  width: 588px;
   display: inline-block;
   line-height: 40px;
   margin-top: 60px; }
@@ -222,12 +254,10 @@ q {
   margin: 50px 0 0; }
   .homepage__belt__container {
     display: flex;
-    margin: 0 auto;
-    width: 960px; }
+    margin: 0 auto; }
     .homepage__belt__container.flexColumn {
       flex-direction: column; }
   .homepage__belt__content {
-    width: 480px;
     text-align: left;
     display: inline-block;
     padding: 0 20px; }
@@ -252,13 +282,11 @@ q {
     flex-wrap: wrap;
     width: 960px;
     margin: 0 auto; }
-  .homepage__belt__icon {
-    width: 160px; }
-    .homepage__belt__icon img {
-      width: 100px; }
-    .homepage__belt__icon__caption {
-      white-space: normal;
-      color: #607FAB; }
+  .homepage__belt__icon img {
+    width: 100px; }
+  .homepage__belt__icon__caption {
+    white-space: normal;
+    color: #607FAB; }
 
 .homepage__quote {
   padding: 100px 0;
@@ -281,7 +309,6 @@ q {
     display: flex; }
   .psychiatrist__table__smallColumn {
     padding: 10px 30px;
-    width: 240px;
     color: #607FAB;
     display: inline-block;
     font-size: 50px;
@@ -290,7 +317,6 @@ q {
     text-transform: capitalize; }
   .psychiatrist__table__largeColumn {
     padding: 0 30px;
-    width: 720px;
     color: #607FAB;
     display: inline-block;
     font-size: 20px;
@@ -310,7 +336,6 @@ q {
   background-position: center; }
 
 .who__quote h1 {
-  width: 640px;
   margin: 0 auto;
   color: #607FAB;
   font-size: 30px;
@@ -330,7 +355,6 @@ q {
   margin-top: 0; }
 
 .who__text {
-  width: 800px;
   margin: 0 auto;
   text-align: left; }
 
@@ -340,7 +364,6 @@ q {
   margin: 50px 0 0; }
   .who__studies__content {
     text-align: left;
-    width: 960px;
     margin: 0 auto;
     padding-left: 20px; }
   .who__studies__wrapper {
@@ -348,9 +371,7 @@ q {
     flex-direction: row;
     flex-wrap: wrap; }
     .who__studies__wrapper__year {
-      width: 240px;
       margin-top: 30px;
       padding-left: 30px; }
     .who__studies__wrapper__activity {
-      width: 640px;
       margin-top: 23px; }

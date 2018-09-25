@@ -2,10 +2,10 @@ import React from 'react';
 
 const TableRow = ({ title, children }) => (
     <div className="psychiatrist__table__row">
-        <aside className="psychiatrist__table__smallColumn">
+        <aside className="psychiatrist__table__smallColumn threeColumnWidth">
             {title}
         </aside>
-        <article className="psychiatrist__table__largeColumn">
+        <article className="psychiatrist__table__largeColumn nineColumnWidth">
             {children}
         </article>
     </div>

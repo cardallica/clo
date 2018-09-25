@@ -5,7 +5,6 @@
 		font-size: 30px;
 		font-weight: $medium;
 		color: $primary-color;
-		width: 588px;
     	display: inline-block;
     	line-height: 40px;
     	margin-top: 60px;
@@ -18,7 +17,6 @@
 		&__container {
 			display: flex;
 			margin: 0 auto;
-			width: $app-width;
 
 			&.flexColumn {
 				flex-direction: column;
@@ -26,7 +24,6 @@
 		}
 
 		&__content {
-			width: 480px;
 			text-align: left;
 			display: inline-block;
 			padding: 0 20px;
@@ -68,9 +65,8 @@
 		}
 
 		&__icon {
-			width: $column-width * 2;
 			img {
-				width: 100px,
+				width: 100px;
 			}
 
 			&__caption {

@@ -7,7 +7,6 @@
     display: flex; }
   .psychiatrist__table__smallColumn {
     padding: 10px 30px;
-    width: 240px;
     color: #607FAB;
     display: inline-block;
     font-size: 50px;
@@ -16,7 +15,6 @@
     text-transform: capitalize; }
   .psychiatrist__table__largeColumn {
     padding: 0 30px;
-    width: 720px;
     color: #607FAB;
     display: inline-block;
     font-size: 20px;

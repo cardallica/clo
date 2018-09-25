@@ -226,10 +226,6 @@ q {
   display: inline-block;
 }
 
-.tenColumnWidth {
-  width: $column-width * 10;
-}
-
 .link {
   color: $accent-color;
   font-size: 18px;
@@ -275,4 +271,45 @@ q {
 
 .lightBackground {
   background-color: $light-color;
+}
+
+.twoColumnWidth {
+  width: 100%;
+  @media (min-width: 960px) {
+    width: $column-width * 2;
+  }
+}
+
+.threeColumnWidth {
+  width: 100%;
+  @media (min-width: 960px) {
+    width: $column-width * 3;
+  }
+}
+
+.sixColumnWidth {
+  width: 100%;
+  @media(min-width: 960px) {
+    width: $column-width * 6;
+  }
+}
+
+.eightColumnWidth {
+  width: 100%;
+  @media (min-width: 960px) {
+    width: $column-width * 8;
+  }
+}
+
+.nineColumnWidth {
+  width: 100%;
+  @media (min-width: 960px) {
+    width: $column-width * 9;
+  }
+}
+.tenColumnWidth {
+  width: 100%;
+  @media (min-width: 960px) {
+    width: $column-width * 10;
+  }
 }

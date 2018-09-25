@@ -2,7 +2,6 @@
   font-size: 30px;
   font-weight: 500;
   color: #607FAB;
-  width: 588px;
   display: inline-block;
   line-height: 40px;
   margin-top: 60px; }
@@ -12,12 +11,10 @@
   margin: 50px 0 0; }
   .homepage__belt__container {
     display: flex;
-    margin: 0 auto;
-    width: 960px; }
+    margin: 0 auto; }
     .homepage__belt__container.flexColumn {
       flex-direction: column; }
   .homepage__belt__content {
-    width: 480px;
     text-align: left;
     display: inline-block;
     padding: 0 20px; }
@@ -42,13 +39,11 @@
     flex-wrap: wrap;
     width: 960px;
     margin: 0 auto; }
-  .homepage__belt__icon {
-    width: 160px; }
-    .homepage__belt__icon img {
-      width: 100px; }
-    .homepage__belt__icon__caption {
-      white-space: normal;
-      color: #607FAB; }
+  .homepage__belt__icon img {
+    width: 100px; }
+  .homepage__belt__icon__caption {
+    white-space: normal;
+    color: #607FAB; }
 
 .homepage__quote {
   padding: 100px 0;

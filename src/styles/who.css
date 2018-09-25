@@ -6,7 +6,6 @@
   background-position: center; }
 
 .who__quote h1 {
-  width: 640px;
   margin: 0 auto;
   color: #607FAB;
   font-size: 30px;
@@ -26,7 +25,6 @@
   margin-top: 0; }
 
 .who__text {
-  width: 800px;
   margin: 0 auto;
   text-align: left; }
 
@@ -36,7 +34,6 @@
   margin: 50px 0 0; }
   .who__studies__content {
     text-align: left;
-    width: 960px;
     margin: 0 auto;
     padding-left: 20px; }
   .who__studies__wrapper {
@@ -44,9 +41,7 @@
     flex-direction: row;
     flex-wrap: wrap; }
     .who__studies__wrapper__year {
-      width: 240px;
       margin-top: 30px;
       padding-left: 30px; }
     .who__studies__wrapper__activity {
-      width: 640px;
       margin-top: 23px; }

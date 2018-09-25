@@ -167,9 +167,6 @@ q {
   white-space: normal;
   display: inline-block; }
 
-.tenColumnWidth {
-  width: 800px; }
-
 .link {
   color: #F7B002;
   font-size: 18px;
@@ -204,3 +201,39 @@ q {
 
 .lightBackground {
   background-color: rgba(227, 240, 248, 0.4); }
+
+.twoColumnWidth {
+  width: 100%; }
+  @media (min-width: 960px) {
+    .twoColumnWidth {
+      width: 160px; } }
+
+.threeColumnWidth {
+  width: 100%; }
+  @media (min-width: 960px) {
+    .threeColumnWidth {
+      width: 240px; } }
+
+.sixColumnWidth {
+  width: 100%; }
+  @media (min-width: 960px) {
+    .sixColumnWidth {
+      width: 480px; } }
+
+.eightColumnWidth {
+  width: 100%; }
+  @media (min-width: 960px) {
+    .eightColumnWidth {
+      width: 640px; } }
+
+.nineColumnWidth {
+  width: 100%; }
+  @media (min-width: 960px) {
+    .nineColumnWidth {
+      width: 720px; } }
+
+.tenColumnWidth {
+  width: 100%; }
+  @media (min-width: 960px) {
+    .tenColumnWidth {
+      width: 800px; } }
