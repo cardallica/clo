@@ -115,11 +115,11 @@ export default class WhatPage extends React.Component {
                     />
                     <BulletPortrait
                         image={ConflittiPng}
-                        caption={WhatTxts.PsicoterapiaEMR.title}
+                        caption={WhatTxts.PsicoterapiaEMDR.title}
                         onClick={() => this.openModal(
                             AnsiaPng,
-                            WhatTxts.PsicoterapiaEMR.title,
-                            WhatTxts.PsicoterapiaEMR.text
+                            WhatTxts.PsicoterapiaEMDR.title,
+                            WhatTxts.PsicoterapiaEMDR.text
                         )}
                     />
 				</div>
