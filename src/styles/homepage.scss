@@ -17,22 +17,31 @@
 		&__container {
 			display: flex;
 			margin: 0 auto;
+			flex-direction: column;
 
 			&.flexColumn {
 				flex-direction: column;
 			}
+
+			@media(min-width: 768px) {
+				flex-direction: row;
+			}
 		}
 
 		&__content {
-			text-align: left;
+			text-align: center;
 			display: inline-block;
 			padding: 0 20px;
+
+			@media(min-width: 960px) {
+				text-align: left;
+			}
 		}
 
 		&__title {
 			display: inline-block;
 		}
-		
+
 		&__text {
 			white-space: normal;
 		}
@@ -40,7 +49,10 @@
 		&__carousel {
 			width: 80%;
 			display: inline-block;
-			float: right;
+
+			@media(min-width: 960px) {
+				float: right;
+			}
 
 			.slick-dots li {
 				margin: 0;
@@ -60,8 +72,10 @@
 		&__icons {
 			display: flex;
 			flex-wrap: wrap;
-			width: $app-width;
-			margin: 0 auto;
+			@media(min-width: 960px) {
+				margin: 0 auto;
+				width: $app-width;
+			}
 		}
 
 		&__icon {

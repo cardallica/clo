@@ -4,7 +4,11 @@
 .psychiatrist__table {
   margin-top: 60px; }
   .psychiatrist__table__row {
-    display: flex; }
+    display: flex;
+    flex-direction: column; }
+    @media (min-width: 960px) {
+      .psychiatrist__table__row {
+        flex-direction: row; } }
   .psychiatrist__table__smallColumn {
     padding: 10px 30px;
     color: #607FAB;

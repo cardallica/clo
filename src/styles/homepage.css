@@ -11,21 +11,30 @@
   margin: 50px 0 0; }
   .homepage__belt__container {
     display: flex;
-    margin: 0 auto; }
+    margin: 0 auto;
+    flex-direction: column; }
     .homepage__belt__container.flexColumn {
       flex-direction: column; }
+    @media (min-width: 768px) {
+      .homepage__belt__container {
+        flex-direction: row; } }
   .homepage__belt__content {
-    text-align: left;
+    text-align: center;
     display: inline-block;
     padding: 0 20px; }
+    @media (min-width: 960px) {
+      .homepage__belt__content {
+        text-align: left; } }
   .homepage__belt__title {
     display: inline-block; }
   .homepage__belt__text {
     white-space: normal; }
   .homepage__belt__carousel {
     width: 80%;
-    display: inline-block;
-    float: right; }
+    display: inline-block; }
+    @media (min-width: 960px) {
+      .homepage__belt__carousel {
+        float: right; } }
     .homepage__belt__carousel .slick-dots li {
       margin: 0; }
     .homepage__belt__carousel .slick-dots li button:before {
@@ -36,9 +45,11 @@
       color: #F7B002; }
   .homepage__belt__icons {
     display: flex;
-    flex-wrap: wrap;
-    width: 960px;
-    margin: 0 auto; }
+    flex-wrap: wrap; }
+    @media (min-width: 960px) {
+      .homepage__belt__icons {
+        margin: 0 auto;
+        width: 960px; } }
   .homepage__belt__icon img {
     width: 100px; }
   .homepage__belt__icon__caption {

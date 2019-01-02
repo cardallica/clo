@@ -17,12 +17,15 @@ header {
   header nav {
     width: 960px;
     margin: 0 auto; }
-    header nav a + a {
+    header nav a.headerLink + a.headerLink {
       margin-left: 30px; }
     header nav .links {
-      display: inline-block;
+      display: none;
       float: right;
       margin-right: 20px; }
+      @media (min-width: 960px) {
+        header nav .links {
+          display: inline-block; } }
   header a {
     color: white;
     margin-top: 27px;
@@ -52,19 +55,14 @@ footer {
     width: 960px;
     margin: 0 auto; }
     footer .footer__content__wrapper {
-      text-align: left; }
-    footer .footer__content__logo {
-      display: inline-block;
-      margin: 30px 0 0 20px;
-      width: 50%; }
-      @media (max-width: 720px) {
-        footer .footer__content__logo {
-          display: block; } }
-    footer .footer__content__contacts {
-      display: inline-block; }
-      @media (max-width: 720px) {
-        footer .footer__content__contacts {
-          display: block; } }
+      text-align: left;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column; }
+      @media (min-width: 960px) {
+        footer .footer__content__wrapper {
+          flex-direction: row;
+          justify-content: space-around; } }
     footer .footer__content__text {
       font-size: 14px;
       line-height: 26px;
@@ -97,10 +95,13 @@ footer {
 .topBanner {
   background: #83A0C5;
   background: linear-gradient(180deg, #83A0C5 0%, #a6bada 100%);
-  min-height: 398px;
+  min-height: 418px;
   position: relative;
   width: 100%;
   color: white; }
+  @media (min-width: 768px) {
+    .topBanner {
+      min-height: 398px; } }
   .topBanner__quote {
     display: inline-block;
     font-style: italic;
@@ -119,7 +120,11 @@ footer {
     margin-top: 60px;
     margin-bottom: 50px;
     max-width: 800px;
-    white-space: normal; }
+    white-space: normal;
+    padding: 0 20px; }
+    @media (min-width: 960px) {
+      .topBanner__text {
+        padding: 0; } }
   .topBanner__author {
     display: block;
     font-size: 14px;
@@ -127,13 +132,21 @@ footer {
   .topBanner__image {
     position: absolute;
     bottom: -20px;
-    left: 25%;
-    width: 50%; }
+    transform: translate(-50%);
+    left: 50%;
+    width: 90%; }
+    @media (min-width: 960px) {
+      .topBanner__image {
+        transform: none;
+        left: 25%;
+        width: 50%; } }
 
 .page {
-  padding-top: 60px;
-  width: 960px;
-  margin: 0 auto; }
+  padding-top: 60px; }
+  @media (min-width: 960px) {
+    .page {
+      width: 960px;
+      margin: 0 auto; } }
 
 h2 {
   font-weight: 500;
@@ -143,7 +156,11 @@ h2 {
   margin: 0; }
   h2.pageTitle {
     font-size: 50px;
-    line-height: 50px; }
+    line-height: 50px;
+    padding: 0 20px; }
+    @media (min-width: 960px) {
+      h2.pageTitle {
+        padding: 0; } }
 
 h3 {
   font-weight: 800;
@@ -157,7 +174,11 @@ p {
   color: #607FAB; }
   p.pageText {
     font-size: 20px;
-    line-height: 30px; }
+    line-height: 30px;
+    padding: 0 20px; }
+    @media (min-width: 960px) {
+      p.pageText {
+        padding: 0; } }
 
 q {
   font-size: 30px;
@@ -181,9 +202,17 @@ q {
 .bullets {
   cursor: pointer;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  margin: 95px 0 80px; }
+  margin: 20px 0 80px;
+  justify-content: center;
+  align-items: center; }
+  @media (min-width: 960px) {
+    .bullets {
+      margin: 95px 0 80px;
+      flex-direction: row;
+      justify-content: normal;
+      align-items: normal; } }
   .bullets .bulletPortrait {
     align-items: center;
     display: flex;
@@ -238,8 +267,32 @@ q {
     .tenColumnWidth {
       width: 800px; } }
 
+.mobileNavigation__icon {
+  display: inline-block;
+  float: left; }
+  .mobileNavigation__icon img {
+    width: 50px; }
+  @media (min-width: 960px) {
+    .mobileNavigation__icon {
+      display: none; } }
+
+.mobileNavigation__menu {
+  position: fixed;
+  top: 72px;
+  flex-direction: column;
+  background-color: #607FAB;
+  left: 0;
+  width: 100vw;
+  flex-wrap: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .mobileNavigation__menu a {
+    color: #F7B002; }
+
 .contacts__list {
-  list-style-type: none; }
+  list-style-type: none;
+  padding: 0; }
 
 .homepage__title {
   font-size: 30px;
@@ -254,21 +307,30 @@ q {
   margin: 50px 0 0; }
   .homepage__belt__container {
     display: flex;
-    margin: 0 auto; }
+    margin: 0 auto;
+    flex-direction: column; }
     .homepage__belt__container.flexColumn {
       flex-direction: column; }
+    @media (min-width: 768px) {
+      .homepage__belt__container {
+        flex-direction: row; } }
   .homepage__belt__content {
-    text-align: left;
+    text-align: center;
     display: inline-block;
     padding: 0 20px; }
+    @media (min-width: 960px) {
+      .homepage__belt__content {
+        text-align: left; } }
   .homepage__belt__title {
     display: inline-block; }
   .homepage__belt__text {
     white-space: normal; }
   .homepage__belt__carousel {
     width: 80%;
-    display: inline-block;
-    float: right; }
+    display: inline-block; }
+    @media (min-width: 960px) {
+      .homepage__belt__carousel {
+        float: right; } }
     .homepage__belt__carousel .slick-dots li {
       margin: 0; }
     .homepage__belt__carousel .slick-dots li button:before {
@@ -279,9 +341,11 @@ q {
       color: #F7B002; }
   .homepage__belt__icons {
     display: flex;
-    flex-wrap: wrap;
-    width: 960px;
-    margin: 0 auto; }
+    flex-wrap: wrap; }
+    @media (min-width: 960px) {
+      .homepage__belt__icons {
+        margin: 0 auto;
+        width: 960px; } }
   .homepage__belt__icon img {
     width: 100px; }
   .homepage__belt__icon__caption {
@@ -306,7 +370,11 @@ q {
 .psychiatrist__table {
   margin-top: 60px; }
   .psychiatrist__table__row {
-    display: flex; }
+    display: flex;
+    flex-direction: column; }
+    @media (min-width: 960px) {
+      .psychiatrist__table__row {
+        flex-direction: row; } }
   .psychiatrist__table__smallColumn {
     padding: 10px 30px;
     color: #607FAB;
@@ -356,7 +424,11 @@ q {
 
 .who__text {
   margin: 0 auto;
+  padding: 0 20px;
   text-align: left; }
+  @media (min-width: 960px) {
+    .who__text {
+      padding: 0; } }
 
 .who__studies {
   background-color: rgba(227, 240, 248, 0.4);
@@ -365,7 +437,7 @@ q {
   .who__studies__content {
     text-align: left;
     margin: 0 auto;
-    padding-left: 20px; }
+    padding: 0 20px; }
   .who__studies__wrapper {
     display: flex;
     flex-direction: row;

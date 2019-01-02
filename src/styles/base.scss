@@ -25,15 +25,19 @@ header {
   nav {
   	width: $app-width;
   	margin: 0 auto;
-  
-  	a + a {
+
+  	a.headerLink + a.headerLink {
   		margin-left: 30px;
   	}
 
   	.links {
-  		display: inline-block;
+  		display: none;
   		float: right;
   		margin-right: 20px;
+
+        @media (min-width: 960px) {
+          display: inline-block;
+        }
   	}
   }
 
@@ -46,8 +50,8 @@ header {
 
   	&:hover {
   		color: $accent-color;
-  	};	
-  
+  	};
+
   	&.logoLink {
   		float: left;
 		margin: 14px 0 0 20px;
@@ -75,24 +79,16 @@ footer {
   .footer__content {
   	width: $app-width;
   	margin: 0 auto;
+
   	&__wrapper {
-  		text-align: left;
-  	}
-
-  	&__logo {
-  		display: inline-block;
-		margin: 30px 0 0 20px;
-  		width: 50%;
-  		@media (max-width: 720px) {
-  			display: block;
-  		}
-  	}
-
-  	&__contacts {
-  		display: inline-block;
-  		@media (max-width: 720px) {
-  			display: block;
-  		}
+      text-align: left;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      @media(min-width: 960px) {
+        flex-direction: row;
+        justify-content: space-around;
+      }
   	}
 
   	&__text {
@@ -138,10 +134,14 @@ footer {
 .topBanner {
   background: $header-color;
   background: linear-gradient(180deg, $header-color 0%, rgba(166,186,218,1) 100%);
-  min-height: 398px;
+  min-height: 418px;
   position: relative;
   width: 100%;
   color: white;
+
+  @media(min-width: 768px){
+    min-height: 398px;
+  }
 
   &__quote {
     display: inline-block;
@@ -164,6 +164,11 @@ footer {
     margin-bottom: 50px;
     max-width: $column-width * 10;
     white-space: normal;
+    padding: 0 20px;
+
+    @media(min-width: 960px) {
+      padding: 0;
+    }
   }
 
   &__author {
@@ -175,15 +180,26 @@ footer {
   &__image {
       position: absolute;
       bottom: -20px;
-      left: 25%;
-      width: 50%;
+      transform: translate(-50%);
+      left: 50%;
+      width: 90%;
+
+      @media(min-width: 960px) {
+        transform: none;
+        left: 25%;
+        width: 50%;
+      }
   }
 }
 
 .page {
   padding-top: 60px;
-  width: $app-width;
-  margin: 0 auto;
+
+  @media(min-width: 960px) {
+    width: $app-width;
+    margin: 0 auto;
+  }
+
 }
 
 h2 {
@@ -196,6 +212,11 @@ h2 {
   &.pageTitle {
     font-size: 50px;
     line-height: 50px;
+    padding: 0 20px;
+
+    @media(min-width: 960px) {
+      padding: 0;
+    }
   }
 }
 
@@ -214,6 +235,11 @@ p {
   &.pageText {
     font-size: 20px;
     line-height: 30px;
+    padding: 0 20px;
+
+    @media(min-width: 960px) {
+      padding: 0;
+    }
   }
 }
 
@@ -244,9 +270,19 @@ q {
 .bullets {
   cursor: pointer;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  margin: 95px 0 80px;
+  margin: 20px 0 80px;
+  justify-content: center;
+  align-items: center;
+
+  @media(min-width: 960px) {
+    margin: 95px 0 80px;
+    flex-direction: row;
+    justify-content: normal;
+    align-items: normal;
+  }
+
 
   .bulletPortrait {
     align-items: center;
@@ -311,5 +347,37 @@ q {
   width: 100%;
   @media (min-width: 960px) {
     width: $column-width * 10;
+  }
+}
+
+.mobileNavigation {
+  &__icon {
+    display: inline-block;
+    float: left;
+
+    img {
+      width: 50px;
+    }
+
+    @media(min-width: 960px) {
+      display: none;
+    }
+  }
+
+  &__menu {
+    position: fixed;
+    top: 72px;
+    flex-direction: column;
+    background-color: $primary-color;
+    left: 0;
+    width: 100vw;
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      color: $accent-color
+    }
   }
 }
