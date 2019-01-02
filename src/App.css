@@ -43,7 +43,7 @@ header {
 main {
   display: block;
   margin-top: 72px;
-  min-height: 600px; }
+  min-height: calc(100vh - 330px); }
 
 footer {
   background-color: #83A0C5;
@@ -396,54 +396,46 @@ q {
   margin-bottom: 30px;
   text-align: left; }
 
-.who__banner {
-  height: 400px;
-  width: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.who__quote h1 {
-  margin: 0 auto;
-  color: #607FAB;
-  font-size: 30px;
-  line-height: 45px;
-  font-style: italic;
-  font-weight: 500;
-  white-space: normal;
-  display: inline-block; }
-
-.who__quote .link {
-  font-size: 30px;
-  line-height: 40px;
-  font-style: italic;
-  font-weight: 500;
-  white-space: normal;
-  display: inline-block;
-  margin-top: 0; }
-
-.who__text {
-  margin: 0 auto;
-  padding: 0 20px;
-  text-align: left; }
-  @media (min-width: 960px) {
-    .who__text {
-      padding: 0; } }
-
-.who__studies {
-  background-color: rgba(227, 240, 248, 0.4);
-  padding: 60px 0;
-  margin: 50px 0 0; }
-  .who__studies__content {
-    text-align: left;
+.who {
+  padding-top: 60px; }
+  .who__quote h1 {
     margin: 0 auto;
-    padding: 0 20px; }
-  .who__studies__wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; }
-    .who__studies__wrapper__year {
-      margin-top: 30px;
-      padding-left: 30px; }
-    .who__studies__wrapper__activity {
-      margin-top: 23px; }
+    color: #607FAB;
+    font-size: 30px;
+    line-height: 45px;
+    font-style: italic;
+    font-weight: 500;
+    white-space: normal;
+    display: inline-block; }
+  .who__quote .link {
+    font-size: 30px;
+    line-height: 40px;
+    font-style: italic;
+    font-weight: 500;
+    white-space: normal;
+    display: inline-block;
+    margin-top: 0; }
+  .who__text {
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: left; }
+    @media (min-width: 960px) {
+      .who__text {
+        padding: 0; } }
+  .who__studies {
+    background-color: rgba(227, 240, 248, 0.4);
+    padding: 60px 0;
+    margin: 50px 0 0; }
+    .who__studies__content {
+      text-align: left;
+      margin: 0 auto;
+      padding: 0 20px; }
+    .who__studies__wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      .who__studies__wrapper__year {
+        margin-top: 30px;
+        padding-left: 30px; }
+      .who__studies__wrapper__activity {
+        margin-top: 23px; }

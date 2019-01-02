@@ -95,7 +95,7 @@ export default class WhatPage extends React.Component {
                         image={AutoStimaPng}
                         caption={WhatTxts.SupportoAllaGravidanza.title}
                         onClick={() => this.openModal(
-                            AnsiaPng,
+                            AutoStimaPng,
                             WhatTxts.SupportoAllaGravidanza.title,
                             WhatTxts.SupportoAllaGravidanza.text
                         )}

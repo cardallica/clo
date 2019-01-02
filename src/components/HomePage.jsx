@@ -5,6 +5,14 @@ import Carousel from './Carousel';
 import ansiaImg from '../assets/ansia.png';
 import conflittiImg from '../assets/conflitti.png';
 import autostimaImg from '../assets/autostima.png';
+import DepressionePng from '../assets/depressione.png';
+import EmancipaizonePng from '../assets/emancipazione.png';
+import FisiciPng from '../assets/fisici.png';
+import LavoroPng from '../assets/lavoro.png';
+import PerduraPng from '../assets/perdura.png';
+import ScuolaPng from '../assets/scuola.png';
+import SeparazionePng from '../assets/separazione.png';
+import StalloPng from '../assets/stallo.png';
 
 const BeltIcon = ({ figure, figCaption }) => (
     <figure className="homepage__belt__icon twoColumnWidth">
@@ -76,7 +84,7 @@ export default class HomePage extends React.Component {
 						Antonio Tabucchi
 					</span>
 				</div>
-				<div className="homepage__belt">
+				<div className="homepage__belt lightBackground">
 					<div className="homepage__belt__container tenColumnWidth flexColumn">
 						<h2 className="homepage__belt__title">
 							Problematiche più frequenti
@@ -96,70 +104,50 @@ export default class HomePage extends React.Component {
 						</p>
 					</div>
 					<div className="homepage__belt__icons">
-                        <BeltIcon
-                            figCaption={"Attacchi di panico"}
-                            figure={ansiaImg}
-                        />
-                        <BeltIcon
-                            figCaption={"Stati emotivi sgradevoli che perdurano da tempo"}
-                            figure={autostimaImg}
-                        />
-                        <BeltIcon
-                            figure={conflittiImg}
-                            figCaption={"Attacchi di panico"}
-                        />
-                        <BeltIcon
-                            figure={ansiaImg}
-                            figCaption={"Attacchi di panico"}
-                        />
-                        <BeltIcon
-                            figCaption={"Attacchi di panico"}
-                            figure={ansiaImg}
-                        />
-                        <BeltIcon
-                            figCaption={"Stati emotivi sgradevoli che perdurano da tempo"}
-                            figure={autostimaImg}
-                        />
-                        <BeltIcon
-                            figure={conflittiImg}
-                            figCaption={"Attacchi di panico"}
-                        />
-                        <BeltIcon
-                            figure={ansiaImg}
-                            figCaption={"Attacchi di panico"}
-                        />
-                        <BeltIcon
-                            figCaption={"Attacchi di panico"}
-                            figure={ansiaImg}
-                        />
-                        <BeltIcon
-                            figCaption={"Stati emotivi sgradevoli che perdurano da tempo"}
-                            figure={autostimaImg}
-                        />
-                        <BeltIcon
-                            figure={conflittiImg}
-                            figCaption={"Attacchi di panico o ansia"}
-                        />
-                        <BeltIcon
-                            figure={ansiaImg}
-                            figCaption={"Attacchi di panico"}
-                        />
-                        <BeltIcon
-                            figCaption={"Attacchi di panico"}
-                            figure={ansiaImg}
-                        />
-                        <BeltIcon
-                            figCaption={"Stati emotivi sgradevoli che perdurano da tempo"}
-                            figure={autostimaImg}
-                        />
-                        <BeltIcon
-                            figure={conflittiImg}
-                            figCaption={"Conflitti"}
-                        />
-                        <BeltIcon
-                            figure={ansiaImg}
-                            figCaption={"Attacchi di panico"}
-                        />
+						<BeltIcon
+								figCaption={"Ansia o attacchi di panico"}
+								figure={ansiaImg}
+						/>
+						<BeltIcon
+								figCaption={"Umore deflesso e depressione"}
+								figure={DepressionePng}
+						/>
+						<BeltIcon
+								figure={PerduraPng}
+								figCaption={"Stati emotivi sgradevoli che perdurano da tempo"}
+						/>
+						<BeltIcon
+								figure={SeparazionePng}
+								figCaption={"Lutti o separazioni"}
+						/>
+						<BeltIcon
+								figCaption={"Problemi scolastici"}
+								figure={ScuolaPng}
+						/>
+						<BeltIcon
+								figCaption={"Difficoltà lavorative"}
+								figure={LavoroPng}
+						/>
+						<BeltIcon
+								figure={FisiciPng}
+								figCaption={"Sintomi fisici senza un origine medica"}
+						/>
+						<BeltIcon
+								figure={StalloPng}
+								figCaption={"Sensazione di stallo o crisi"}
+						/>
+						<BeltIcon
+								figCaption={"Conflitti o problemi relazionali"}
+								figure={conflittiImg}
+						/>
+						<BeltIcon
+								figCaption={"Difficoltà di svincolo, fatica ad emanciparsi"}
+								figure={EmancipaizonePng}
+						/>
+						<BeltIcon
+								figure={autostimaImg}
+								figCaption={"Scarsa autostima"}
+						/>
 					</div>
 				</div>
 			</div>

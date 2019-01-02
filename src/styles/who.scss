@@ -1,13 +1,7 @@
 @import './variables.scss';
 
 .who {
-  &__banner {
-    height: 400px;
-    width: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+  padding-top: 60px;
 
   &__quote {
     h1 {
