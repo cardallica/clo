@@ -12,7 +12,10 @@ class MobileNavigation extends React.Component {
   }
 
   toggleMenu = () =>
-    this.setState({ isOpen: !this.state.isOpen });
+    this.setState({ isOpen: !this.state.isOpen }, () => {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    });
 
   render() {
     return (

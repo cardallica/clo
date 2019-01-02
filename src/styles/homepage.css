@@ -4,11 +4,14 @@
   color: #607FAB;
   display: inline-block;
   line-height: 40px;
-  margin-top: 60px; }
+  margin-top: 80px;
+  padding: 0 15px; }
+  @media (min-width: 960px) {
+    .homepage__title {
+      padding: 0; } }
 
 .homepage__belt {
-  padding: 60px 0;
-  margin: 50px 0 0; }
+  padding: 30px 0 60px; }
   .homepage__belt__container {
     display: flex;
     margin: 0 auto;
@@ -57,11 +60,14 @@
     color: #607FAB; }
 
 .homepage__quote {
-  padding: 100px 0;
+  padding: 100px 0 50px;
   color: #607FAB;
   width: 100%; }
   .homepage__quote q {
     margin: 0 auto; }
+  @media (min-width: 960px) {
+    .homepage__quote {
+      padding: 100px 0; } }
 
 .homepage__author {
   display: block;

@@ -23,8 +23,10 @@ header {
   z-index: 1;
 
   nav {
-  	width: $app-width;
-  	margin: 0 auto;
+    @media(min-width: 960px) {
+      width: $app-width;
+      margin: 0 auto;
+    }
 
   	a.headerLink + a.headerLink {
   		margin-left: 30px;
@@ -77,8 +79,10 @@ footer {
   width: 100%;
 
   .footer__content {
-  	width: $app-width;
-  	margin: 0 auto;
+    @media(min-width: 960px) {
+      width: $app-width;
+      margin: 0 auto;
+    }
 
   	&__wrapper {
       text-align: left;
@@ -146,12 +150,19 @@ footer {
   &__quote {
     display: inline-block;
     font-style: italic;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: $medium;
-    line-height: 60px;
+    line-height: 50px;
     margin-top: 50px;
+    padding: 0 15px;
     max-width: 588px;
     white-space: normal;
+
+    @media(min-width: 960px) {
+      font-size: 50px;
+      line-height: 60px;
+      padding: 0;
+    }
   }
 
   &__text {
@@ -183,11 +194,10 @@ footer {
       transform: translate(-50%);
       left: 50%;
       width: 90%;
+      max-width: 680px;
 
       @media(min-width: 960px) {
-        transform: none;
-        left: 25%;
-        width: 50%;
+        width: 680px;
       }
   }
 }
@@ -301,6 +311,7 @@ q {
       font-weight: 500;
       line-height: 24px;
       padding: 10px;
+      text-transform: capitalize;
     }
   }
 }

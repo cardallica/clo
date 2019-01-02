@@ -3,9 +3,14 @@ import Modal from 'react-modal';
 
 import BulletPortrait from './BulletPortrait';
 
-import AnsiaPng from '../assets/ansia.png';
-import AutoStimaPng from '../assets/autostima.png';
-import ConflittiPng from '../assets/conflitti.png';
+import Coppia from '../assets/what/coppia.png';
+import EMDR from '../assets/what/EMDR.png';
+import Famiglia from '../assets/what/famiglia.png';
+import Gravidanza from '../assets/what/gravidanza.png';
+import Individuale from '../assets/what/individuale.png';
+import PMA from '../assets/what/PMA.png';
+import Puerperio from '../assets/what/puerperio.png';
+import Sostegno from '../assets/what/sostegno.png';
 
 import { WhatTxts} from '../assets/Texts';
 
@@ -56,103 +61,103 @@ export default class WhatPage extends React.Component {
 				</p>
 				<div className="bullets">
 					<BulletPortrait
-                        image={AnsiaPng}
-                        caption={WhatTxts.ConsulenzaESostegnoPsicologico.title}
-                        onClick={() => this.openModal(
-                            AnsiaPng,
-                            WhatTxts.ConsulenzaESostegnoPsicologico.title,
-                            WhatTxts.ConsulenzaESostegnoPsicologico.text
-                        )}
-                    />
-                    <BulletPortrait
-                        image={AutoStimaPng}
-                        caption={WhatTxts.PsicoTerapiaIndividuale.title}
-                        onClick={() => this.openModal(
-                            AutoStimaPng,
-                            WhatTxts.PsicoTerapiaIndividuale.title,
-                            WhatTxts.PsicoTerapiaIndividuale.text
-                        )}
-                    />
+              image={Sostegno}
+              caption={WhatTxts.ConsulenzaESostegnoPsicologico.title}
+              onClick={() => this.openModal(
+                  Sostegno,
+                  WhatTxts.ConsulenzaESostegnoPsicologico.title,
+                  WhatTxts.ConsulenzaESostegnoPsicologico.text
+              )}
+          />
+          <BulletPortrait
+              image={Individuale}
+              caption={WhatTxts.PsicoTerapiaIndividuale.title}
+              onClick={() => this.openModal(
+                  Individuale,
+                  WhatTxts.PsicoTerapiaIndividuale.title,
+                  WhatTxts.PsicoTerapiaIndividuale.text
+              )}
+          />
 					<BulletPortrait
-                        image={ConflittiPng}
-                        caption={WhatTxts.PsicoterapiaDiCoppia.title}
-                        onClick={() => this.openModal(
-                            AnsiaPng,
-                            WhatTxts.PsicoterapiaDiCoppia.title,
-                            WhatTxts.PsicoterapiaDiCoppia.text
-                        )}
-                    />
-                    <BulletPortrait
-                        image={ConflittiPng}
-                        caption={WhatTxts.PsicoterapiaFamiliare.title}
-                        onClick={() => this.openModal(
-                            AnsiaPng,
-                            WhatTxts.PsicoterapiaFamiliare.title,
-                            WhatTxts.PsicoterapiaFamiliare.text
-                        )}
-                    />
-                    <BulletPortrait
-                        image={AutoStimaPng}
-                        caption={WhatTxts.SupportoAllaGravidanza.title}
-                        onClick={() => this.openModal(
-                            AutoStimaPng,
-                            WhatTxts.SupportoAllaGravidanza.title,
-                            WhatTxts.SupportoAllaGravidanza.text
-                        )}
-                    />
-                    <BulletPortrait
-                        image={AutoStimaPng}
-                        caption={WhatTxts.SupportoNelPuerperio.title}
-                        onClick={() => this.openModal(
-                            AnsiaPng,
-                            WhatTxts.SupportoNelPuerperio.title,
-                            WhatTxts.SupportoNelPuerperio.text
-                        )}
-                    />
-                    <BulletPortrait
-                        image={AnsiaPng}
-                        caption={WhatTxts.SostegnoInfertilita.title}
-                        onClick={() => this.openModal(
-                            AnsiaPng,
-                            WhatTxts.SostegnoInfertilita.title,
-                            WhatTxts.SostegnoInfertilita.text
-                        )}
-                    />
-                    <BulletPortrait
-                        image={ConflittiPng}
-                        caption={WhatTxts.PsicoterapiaEMDR.title}
-                        onClick={() => this.openModal(
-                            AnsiaPng,
-                            WhatTxts.PsicoterapiaEMDR.title,
-                            WhatTxts.PsicoterapiaEMDR.text
-                        )}
-                    />
+                image={Coppia}
+                caption={WhatTxts.PsicoterapiaDiCoppia.title}
+                onClick={() => this.openModal(
+                    Coppia,
+                    WhatTxts.PsicoterapiaDiCoppia.title,
+                    WhatTxts.PsicoterapiaDiCoppia.text
+                )}
+            />
+            <BulletPortrait
+                image={Famiglia}
+                caption={WhatTxts.PsicoterapiaFamiliare.title}
+                onClick={() => this.openModal(
+                  Famiglia,
+                    WhatTxts.PsicoterapiaFamiliare.title,
+                    WhatTxts.PsicoterapiaFamiliare.text
+                )}
+            />
+            <BulletPortrait
+                image={Gravidanza}
+                caption={WhatTxts.SupportoAllaGravidanza.title}
+                onClick={() => this.openModal(
+                  Gravidanza,
+                    WhatTxts.SupportoAllaGravidanza.title,
+                    WhatTxts.SupportoAllaGravidanza.text
+                )}
+            />
+            <BulletPortrait
+                image={Puerperio}
+                caption={WhatTxts.SupportoNelPuerperio.title}
+                onClick={() => this.openModal(
+                  Puerperio,
+                    WhatTxts.SupportoNelPuerperio.title,
+                    WhatTxts.SupportoNelPuerperio.text
+                )}
+            />
+            <BulletPortrait
+                image={PMA}
+                caption={WhatTxts.SostegnoInfertilita.title}
+                onClick={() => this.openModal(
+                  PMA,
+                    WhatTxts.SostegnoInfertilita.title,
+                    WhatTxts.SostegnoInfertilita.text
+                )}
+            />
+            <BulletPortrait
+                image={EMDR}
+                caption={WhatTxts.PsicoterapiaEMDR.title}
+                onClick={() => this.openModal(
+                  EMDR,
+                    WhatTxts.PsicoterapiaEMDR.title,
+                    WhatTxts.PsicoterapiaEMDR.text
+                )}
+            />
 				</div>
 				<p className="pageText">
-                    La psicoterapia sistemica considera i sintomi come messaggi che danno informazioni
-                    sul mondo relazionale della persona. Scopo del percorso è quello “dar voce” alla sintomatologia,
-                    cogliendone il significato e la funzione, così da poter rispondere in maniera diversa,
-                    più efficace e sintonica,  alle difficoltà.
+          La psicoterapia sistemica considera i sintomi come messaggi che danno informazioni
+          sul mondo relazionale della persona. Scopo del percorso è quello “dar voce” alla sintomatologia,
+          cogliendone il significato e la funzione, così da poter rispondere in maniera diversa,
+          più efficace e sintonica,  alle difficoltà.
 				</p>
-                <Modal
-                    isOpen={this.state.isModalOpen}
-                    onRequestClose={this.closeModal}
-                    contentLabel={this.state.modalTitle}
-                    style={{
-                      content: {
-                        ...modalStyle
-                      }
-                    }}
-                >
-                    <img
-                        src={this.state.modalImage}
-                        alt=""
-                    />
-                    <h2>{this.state.modalTitle}</h2>
-                    <p>
-                        {this.state.modalText}
-                    </p>
-                </Modal>
+          <Modal
+              isOpen={this.state.isModalOpen}
+              onRequestClose={this.closeModal}
+              contentLabel={this.state.modalTitle}
+              style={{
+                content: {
+                  ...modalStyle
+                }
+              }}
+          >
+            <img
+                src={this.state.modalImage}
+                alt=""
+            />
+            <h2>{this.state.modalTitle}</h2>
+            <p>
+                {this.state.modalText}
+            </p>
+          </Modal>
 			</div>
 		);
 	}

@@ -14,18 +14,19 @@ header {
   background-color: #83A0C5;
   width: 100%;
   z-index: 1; }
-  header nav {
-    width: 960px;
-    margin: 0 auto; }
-    header nav a.headerLink + a.headerLink {
-      margin-left: 30px; }
-    header nav .links {
-      display: none;
-      float: right;
-      margin-right: 20px; }
-      @media (min-width: 960px) {
-        header nav .links {
-          display: inline-block; } }
+  @media (min-width: 960px) {
+    header nav {
+      width: 960px;
+      margin: 0 auto; } }
+  header nav a.headerLink + a.headerLink {
+    margin-left: 30px; }
+  header nav .links {
+    display: none;
+    float: right;
+    margin-right: 20px; }
+    @media (min-width: 960px) {
+      header nav .links {
+        display: inline-block; } }
   header a {
     color: white;
     margin-top: 27px;
@@ -51,31 +52,32 @@ footer {
   display: block;
   padding-bottom: 30px;
   width: 100%; }
-  footer .footer__content {
-    width: 960px;
-    margin: 0 auto; }
-    footer .footer__content__wrapper {
-      text-align: left;
-      padding: 30px 20px;
-      display: flex;
-      flex-direction: column; }
-      @media (min-width: 960px) {
-        footer .footer__content__wrapper {
-          flex-direction: row;
-          justify-content: space-around; } }
-    footer .footer__content__text {
-      font-size: 14px;
-      line-height: 26px;
-      display: block; }
-      footer .footer__content__text a, footer .footer__content__text a:hover, footer .footer__content__text a:visited {
-        color: white;
-        text-decoration: none; }
-    footer .footer__content__copyrights {
-      display: block;
-      font-size: 10px;
-      margin: 30px;
-      width: 100%;
-      text-align: center; }
+  @media (min-width: 960px) {
+    footer .footer__content {
+      width: 960px;
+      margin: 0 auto; } }
+  footer .footer__content__wrapper {
+    text-align: left;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column; }
+    @media (min-width: 960px) {
+      footer .footer__content__wrapper {
+        flex-direction: row;
+        justify-content: space-around; } }
+  footer .footer__content__text {
+    font-size: 14px;
+    line-height: 26px;
+    display: block; }
+    footer .footer__content__text a, footer .footer__content__text a:hover, footer .footer__content__text a:visited {
+      color: white;
+      text-decoration: none; }
+  footer .footer__content__copyrights {
+    display: block;
+    font-size: 10px;
+    margin: 30px;
+    width: 100%;
+    text-align: center; }
 
 .uppercase {
   text-transform: uppercase; }
@@ -105,12 +107,18 @@ footer {
   .topBanner__quote {
     display: inline-block;
     font-style: italic;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 500;
-    line-height: 60px;
+    line-height: 50px;
     margin-top: 50px;
+    padding: 0 15px;
     max-width: 588px;
     white-space: normal; }
+    @media (min-width: 960px) {
+      .topBanner__quote {
+        font-size: 50px;
+        line-height: 60px;
+        padding: 0; } }
   .topBanner__text {
     display: inline-block;
     font-size: 30px;
@@ -134,12 +142,11 @@ footer {
     bottom: -20px;
     transform: translate(-50%);
     left: 50%;
-    width: 90%; }
+    width: 90%;
+    max-width: 680px; }
     @media (min-width: 960px) {
       .topBanner__image {
-        transform: none;
-        left: 25%;
-        width: 50%; } }
+        width: 680px; } }
 
 .page {
   padding-top: 60px; }
@@ -226,7 +233,8 @@ q {
       font-size: 20px;
       font-weight: 500;
       line-height: 24px;
-      padding: 10px; }
+      padding: 10px;
+      text-transform: capitalize; }
 
 .lightBackground {
   background-color: rgba(227, 240, 248, 0.4); }
@@ -300,11 +308,14 @@ q {
   color: #607FAB;
   display: inline-block;
   line-height: 40px;
-  margin-top: 60px; }
+  margin-top: 80px;
+  padding: 0 15px; }
+  @media (min-width: 960px) {
+    .homepage__title {
+      padding: 0; } }
 
 .homepage__belt {
-  padding: 60px 0;
-  margin: 50px 0 0; }
+  padding: 30px 0 60px; }
   .homepage__belt__container {
     display: flex;
     margin: 0 auto;
@@ -353,11 +364,14 @@ q {
     color: #607FAB; }
 
 .homepage__quote {
-  padding: 100px 0;
+  padding: 100px 0 50px;
   color: #607FAB;
   width: 100%; }
   .homepage__quote q {
     margin: 0 auto; }
+  @media (min-width: 960px) {
+    .homepage__quote {
+      padding: 100px 0; } }
 
 .homepage__author {
   display: block;

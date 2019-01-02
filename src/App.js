@@ -8,7 +8,7 @@ import Contacts from './components/Contacts';
 import Footer from './components/Footer';
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
 } from 'react-router-dom'
 
@@ -17,7 +17,7 @@ require('./App.css');
 class App extends Component {
   render() {
     return (
-      <Router>
+      <Router >
         <div className='app'>
             <Header />
             <main>
