@@ -39,8 +39,13 @@ export default class WhatPage extends React.Component {
 
 	render() {
 	    const modalStyle = {
-	        height: 400,
-	        width: 600,
+	        height: 'auto',
+	        width: '40vw',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+          right: 'initial',
+          bottom: 'initial'
         };
 
 		return (
@@ -133,7 +138,11 @@ export default class WhatPage extends React.Component {
                     isOpen={this.state.isModalOpen}
                     onRequestClose={this.closeModal}
                     contentLabel={this.state.modalTitle}
-                    style={modalStyle}
+                    style={{
+                      content: {
+                        ...modalStyle
+                      }
+                    }}
                 >
                     <img
                         src={this.state.modalImage}

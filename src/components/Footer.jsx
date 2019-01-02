@@ -10,7 +10,7 @@ export default class Footer extends React.Component {
 						<div className="footer__content__logo">
 							<Logo />
 							<span className="footer__content__text uppercase">
-								p.iva 12345678911
+								p.iva 06744840965
 							</span>
 						</div>
 						<div className="footer__content__contacts">
@@ -18,13 +18,13 @@ export default class Footer extends React.Component {
 								via Matteotti, 1 - Lissone 20851 (MB)
 							</span>
 							<span className="footer__content__text">
-								<a href="tel:3331234567">
-									tel: 333 1234567
+								<a href="tel:3334901691">
+									tel: 333 4901691
 								</a>
 							</span>
 							<span className="footer__content__text">
-								<a href="mailto:pippo@pluto.com">
-									pippo@pluto.com
+								<a href="mailto:robertasalerno@tiscali.it">
+									robertasalerno@tiscali.it
 								</a>
 							</span>
 						</div>
