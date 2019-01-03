@@ -1,3 +1,9 @@
+.contacts.page {
+  padding-top: 30px; }
+  @media (min-width: 960px) {
+    .contacts.page {
+      padding-top: 60px; } }
+
 .contacts__list {
   list-style-type: none;
   padding: 0; }

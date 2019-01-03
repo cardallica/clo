@@ -1,22 +1,24 @@
 .who {
   padding-top: 60px; }
-  .who__quote h1 {
-    margin: 0 auto;
-    color: #607FAB;
-    font-size: 30px;
-    line-height: 45px;
-    font-style: italic;
-    font-weight: 500;
-    white-space: normal;
-    display: inline-block; }
-  .who__quote .link {
-    font-size: 30px;
-    line-height: 40px;
-    font-style: italic;
-    font-weight: 500;
-    white-space: normal;
-    display: inline-block;
-    margin-top: 0; }
+  .who__quote {
+    padding: 0 20px; }
+    .who__quote h1 {
+      margin: 0 auto;
+      color: #607FAB;
+      font-size: 30px;
+      line-height: 45px;
+      font-style: italic;
+      font-weight: 500;
+      white-space: normal;
+      display: inline-block; }
+    .who__quote .link {
+      font-size: 30px;
+      line-height: 40px;
+      font-style: italic;
+      font-weight: 500;
+      white-space: normal;
+      display: inline-block;
+      margin-top: 0; }
   .who__text {
     margin: 0 auto;
     padding: 0 20px;
@@ -37,7 +39,10 @@
       flex-direction: row;
       flex-wrap: wrap; }
       .who__studies__wrapper__year {
-        margin-top: 30px;
+        margin: 30px 0 0;
         padding-left: 30px; }
       .who__studies__wrapper__activity {
-        margin-top: 23px; }
+        margin-top: 0; }
+        @media (min-width: 960px) {
+          .who__studies__wrapper__activity {
+            margin-top: 23px; } }

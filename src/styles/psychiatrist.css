@@ -2,13 +2,18 @@
   padding: 60px 0 80px; }
 
 .psychiatrist__table {
-  margin-top: 60px; }
+  margin-top: 35px; }
+  @media (min-width: 960px) {
+    .psychiatrist__table {
+      margin-top: 60px; } }
   .psychiatrist__table__row {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-top: 25px; }
     @media (min-width: 960px) {
       .psychiatrist__table__row {
-        flex-direction: row; } }
+        flex-direction: row;
+        margin-top: 0; } }
   .psychiatrist__table__smallColumn {
     padding: 10px 30px;
     color: #607FAB;

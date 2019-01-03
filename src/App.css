@@ -44,7 +44,7 @@ header {
 main {
   display: block;
   margin-top: 72px;
-  min-height: calc(100vh - 330px); }
+  min-height: calc(100vh - 270px); }
 
 footer {
   background-color: #83A0C5;
@@ -147,12 +147,10 @@ footer {
       .topBanner__image {
         width: 680px; } }
 
-.page {
-  padding-top: 60px; }
-  @media (min-width: 960px) {
-    .page {
-      width: 960px;
-      margin: 0 auto; } }
+@media (min-width: 960px) {
+  .page {
+    width: 960px;
+    margin: 0 auto; } }
 
 h2 {
   font-weight: 500;
@@ -210,7 +208,7 @@ q {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 20px 0 80px;
+  margin: 20px 0 0;
   justify-content: center;
   align-items: center; }
   @media (min-width: 960px) {
@@ -223,7 +221,8 @@ q {
     align-items: center;
     display: flex;
     flex-direction: column;
-    width: 240px; }
+    width: 240px;
+    margin: 0 0 50px; }
     .bullets .bulletPortrait img {
       width: 150px;
       height: 150px; }
@@ -299,6 +298,12 @@ q {
   .mobileNavigation__menu a {
     width: 100%; }
 
+.contacts.page {
+  padding-top: 30px; }
+  @media (min-width: 960px) {
+    .contacts.page {
+      padding-top: 60px; } }
+
 .contacts__list {
   list-style-type: none;
   padding: 0; }
@@ -316,6 +321,7 @@ q {
       padding: 0; } }
 
 .homepage__belt {
+  margin-top: 30px;
   padding: 30px 0 60px; }
   .homepage__belt__container {
     display: flex;
@@ -336,7 +342,11 @@ q {
   .homepage__belt__title {
     display: inline-block; }
   .homepage__belt__text {
+    padding: 0 20px;
     white-space: normal; }
+    @media (min-width: 960px) {
+      .homepage__belt__text {
+        padding: 0; } }
   .homepage__belt__carousel {
     width: 80%;
     display: inline-block; }
@@ -358,6 +368,9 @@ q {
       .homepage__belt__icons {
         margin: 0 auto;
         width: 960px; } }
+  @media (max-width: 960px) {
+    .homepage__belt__icon {
+      margin: 10px 20px 50px; } }
   .homepage__belt__icon img {
     width: 100px; }
   .homepage__belt__icon__caption {
@@ -365,7 +378,7 @@ q {
     color: #607FAB; }
 
 .homepage__quote {
-  padding: 100px 0 50px;
+  padding: 100px 20px 50px;
   color: #607FAB;
   width: 100%; }
   .homepage__quote q {
@@ -383,13 +396,18 @@ q {
   padding: 60px 0 80px; }
 
 .psychiatrist__table {
-  margin-top: 60px; }
+  margin-top: 35px; }
+  @media (min-width: 960px) {
+    .psychiatrist__table {
+      margin-top: 60px; } }
   .psychiatrist__table__row {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-top: 25px; }
     @media (min-width: 960px) {
       .psychiatrist__table__row {
-        flex-direction: row; } }
+        flex-direction: row;
+        margin-top: 0; } }
   .psychiatrist__table__smallColumn {
     padding: 10px 30px;
     color: #607FAB;
@@ -407,13 +425,23 @@ q {
     line-height: 30px;
     text-align: left; }
 
+.what.page {
+  padding-top: 30px; }
+  @media (min-width: 960px) {
+    .what.page {
+      padding-top: 60px; } }
+
 .what .pageTitle {
   margin-bottom: 30px;
-  text-align: left; }
+  text-align: center; }
+  @media (min-width: 960px) {
+    .what .pageTitle {
+      text-align: left; } }
 
 .ReactModal__Overlay {
   display: flex;
-  align-items: flex-end; }
+  align-items: flex-start;
+  z-index: 1; }
   @media (min-width: 960px) {
     .ReactModal__Overlay {
       justify-content: center;
@@ -428,7 +456,7 @@ q {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  height: calc(100% - 72px);
+  height: 100%;
   overflow: scroll; }
   @media (min-width: 960px) {
     .ReactModal__Content {
@@ -449,23 +477,25 @@ q {
 
 .who {
   padding-top: 60px; }
-  .who__quote h1 {
-    margin: 0 auto;
-    color: #607FAB;
-    font-size: 30px;
-    line-height: 45px;
-    font-style: italic;
-    font-weight: 500;
-    white-space: normal;
-    display: inline-block; }
-  .who__quote .link {
-    font-size: 30px;
-    line-height: 40px;
-    font-style: italic;
-    font-weight: 500;
-    white-space: normal;
-    display: inline-block;
-    margin-top: 0; }
+  .who__quote {
+    padding: 0 20px; }
+    .who__quote h1 {
+      margin: 0 auto;
+      color: #607FAB;
+      font-size: 30px;
+      line-height: 45px;
+      font-style: italic;
+      font-weight: 500;
+      white-space: normal;
+      display: inline-block; }
+    .who__quote .link {
+      font-size: 30px;
+      line-height: 40px;
+      font-style: italic;
+      font-weight: 500;
+      white-space: normal;
+      display: inline-block;
+      margin-top: 0; }
   .who__text {
     margin: 0 auto;
     padding: 0 20px;
@@ -486,7 +516,10 @@ q {
       flex-direction: row;
       flex-wrap: wrap; }
       .who__studies__wrapper__year {
-        margin-top: 30px;
+        margin: 30px 0 0;
         padding-left: 30px; }
       .who__studies__wrapper__activity {
-        margin-top: 23px; }
+        margin-top: 0; }
+        @media (min-width: 960px) {
+          .who__studies__wrapper__activity {
+            margin-top: 23px; } }

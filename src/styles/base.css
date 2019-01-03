@@ -44,7 +44,7 @@ header {
 main {
   display: block;
   margin-top: 72px;
-  min-height: calc(100vh - 330px); }
+  min-height: calc(100vh - 270px); }
 
 footer {
   background-color: #83A0C5;
@@ -147,12 +147,10 @@ footer {
       .topBanner__image {
         width: 680px; } }
 
-.page {
-  padding-top: 60px; }
-  @media (min-width: 960px) {
-    .page {
-      width: 960px;
-      margin: 0 auto; } }
+@media (min-width: 960px) {
+  .page {
+    width: 960px;
+    margin: 0 auto; } }
 
 h2 {
   font-weight: 500;
@@ -210,7 +208,7 @@ q {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 20px 0 80px;
+  margin: 20px 0 0;
   justify-content: center;
   align-items: center; }
   @media (min-width: 960px) {
@@ -223,7 +221,8 @@ q {
     align-items: center;
     display: flex;
     flex-direction: column;
-    width: 240px; }
+    width: 240px;
+    margin: 0 0 50px; }
     .bullets .bulletPortrait img {
       width: 150px;
       height: 150px; }

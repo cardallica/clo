@@ -11,6 +11,7 @@
       padding: 0; } }
 
 .homepage__belt {
+  margin-top: 30px;
   padding: 30px 0 60px; }
   .homepage__belt__container {
     display: flex;
@@ -31,7 +32,11 @@
   .homepage__belt__title {
     display: inline-block; }
   .homepage__belt__text {
+    padding: 0 20px;
     white-space: normal; }
+    @media (min-width: 960px) {
+      .homepage__belt__text {
+        padding: 0; } }
   .homepage__belt__carousel {
     width: 80%;
     display: inline-block; }
@@ -53,6 +58,9 @@
       .homepage__belt__icons {
         margin: 0 auto;
         width: 960px; } }
+  @media (max-width: 960px) {
+    .homepage__belt__icon {
+      margin: 10px 20px 50px; } }
   .homepage__belt__icon img {
     width: 100px; }
   .homepage__belt__icon__caption {
@@ -60,7 +68,7 @@
     color: #607FAB; }
 
 .homepage__quote {
-  padding: 100px 0 50px;
+  padding: 100px 20px 50px;
   color: #607FAB;
   width: 100%; }
   .homepage__quote q {
