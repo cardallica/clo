@@ -1,6 +1,57 @@
+@import "./variables.scss";
+
 .what {
   .pageTitle {
     margin-bottom: 30px;
     text-align: left;
+  }
+}
+
+.ReactModal {
+  &__Overlay {
+    display: flex;
+    align-items: flex-end;
+
+    @media(min-width: 960px) {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__Content {
+    background-color: white;
+    border: 1px solid $primary-color;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: calc(100% - 72px);
+    overflow: scroll;
+
+    @media(min-width:960px) {
+      height: auto;
+      overflow: hidden;
+      width: $app-width;
+    }
+
+    .modal {
+      &__icon {
+        width: 200px;
+      }
+
+      &__close {
+        position: fixed;
+        top: 90px;
+        right: 20px;
+
+        @media(min-width: 960px) {
+          position: absolute;
+          top: 15px;
+          right: 25px;
+        }
+      }
+    }
   }
 }

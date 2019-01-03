@@ -1,3 +1,39 @@
 .what .pageTitle {
   margin-bottom: 30px;
   text-align: left; }
+
+.ReactModal__Overlay {
+  display: flex;
+  align-items: flex-end; }
+  @media (min-width: 960px) {
+    .ReactModal__Overlay {
+      justify-content: center;
+      align-items: center; } }
+
+.ReactModal__Content {
+  background-color: white;
+  border: 1px solid #607FAB;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: calc(100% - 72px);
+  overflow: scroll; }
+  @media (min-width: 960px) {
+    .ReactModal__Content {
+      height: auto;
+      overflow: hidden;
+      width: 960px; } }
+  .ReactModal__Content .modal__icon {
+    width: 200px; }
+  .ReactModal__Content .modal__close {
+    position: fixed;
+    top: 90px;
+    right: 20px; }
+    @media (min-width: 960px) {
+      .ReactModal__Content .modal__close {
+        position: absolute;
+        top: 15px;
+        right: 25px; } }

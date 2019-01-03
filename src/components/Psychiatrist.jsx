@@ -17,7 +17,7 @@ export default class PhychiatristPage extends React.Component {
 			<div className="psychiatrist">
 				<div className="topBanner">
                     <span className="topBanner__text">
-                        Nel corso della vita, a fronte di <strong>cambiamenti</strong> o <strong>tappe importanti</strong>
+                        Nel corso della vita, a fronte di <strong>cambiamenti</strong> o <strong>tappe importanti </strong>
                         della propria storia
                         (sposarsi, interrompere una relazione, divorziare, cambiare lavoro, avere figli…)
                         e di <strong>eventi particolarmente stressanti</strong> o <strong>dolorosi</strong> (affrontare un lutto o una malattia…)

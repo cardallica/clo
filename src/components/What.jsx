@@ -43,16 +43,6 @@ export default class WhatPage extends React.Component {
         });
 
 	render() {
-	    const modalStyle = {
-	        height: 'auto',
-	        width: '40vw',
-          top: '50%',
-          left: '50%',
-          transform: 'translate(-50%, -50%)',
-          right: 'initial',
-          bottom: 'initial'
-        };
-
 		return (
 			<div className="what page">
 				<h2 className="pageTitle">Modalità di intervento</h2>
@@ -140,21 +130,24 @@ export default class WhatPage extends React.Component {
           più efficace e sintonica,  alle difficoltà.
 				</p>
           <Modal
-              isOpen={this.state.isModalOpen}
-              onRequestClose={this.closeModal}
-              contentLabel={this.state.modalTitle}
-              style={{
-                content: {
-                  ...modalStyle
-                }
-              }}
+            isOpen={this.state.isModalOpen}
+            onRequestClose={this.closeModal}
+            contentLabel={this.state.modalTitle}
+            className="modal"
           >
+            <img
+              className="modal__close"
+              src=""
+              alt="X"
+              onClick={this.closeModal}
+            />
             <img
                 src={this.state.modalImage}
                 alt=""
+                className="modal__icon"
             />
-            <h2>{this.state.modalTitle}</h2>
-            <p>
+            <h2 className="modal__title">{this.state.modalTitle}</h2>
+            <p className="modal__text">
                 {this.state.modalText}
             </p>
           </Modal>

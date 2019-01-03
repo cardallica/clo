@@ -108,7 +108,6 @@ footer {
   	&__copyrights {
   		display: block;
   		font-size: 10px;
-  		margin: 30px;
   		width: 100%;
   		text-align: center;
   	}
@@ -364,7 +363,8 @@ q {
 .mobileNavigation {
   &__icon {
     display: inline-block;
-    float: left;
+    float: right;
+    margin: 20px;
 
     img {
       width: 50px;
@@ -386,9 +386,10 @@ q {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 25px;
 
     a {
-      color: $accent-color
+      width: 100%;
     }
   }
 }

@@ -75,7 +75,6 @@ footer {
   footer .footer__content__copyrights {
     display: block;
     font-size: 10px;
-    margin: 30px;
     width: 100%;
     text-align: center; }
 
@@ -277,7 +276,8 @@ q {
 
 .mobileNavigation__icon {
   display: inline-block;
-  float: left; }
+  float: right;
+  margin: 20px; }
   .mobileNavigation__icon img {
     width: 50px; }
   @media (min-width: 960px) {
@@ -294,6 +294,7 @@ q {
   flex-wrap: nowrap;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  padding-bottom: 25px; }
   .mobileNavigation__menu a {
-    color: #F7B002; }
+    width: 100%; }
