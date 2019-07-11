@@ -276,9 +276,12 @@ q {
 .mobileNavigation__icon {
   display: inline-block;
   float: right;
-  margin: 20px; }
+  margin: 25px 20px; }
   .mobileNavigation__icon img {
-    width: 50px; }
+    width: 30px; }
+  .mobileNavigation__icon.open img {
+    width: 25px;
+    margin: -5px 5px; }
   @media (min-width: 960px) {
     .mobileNavigation__icon {
       display: none; } }
@@ -449,7 +452,7 @@ q {
 
 .ReactModal__Content {
   background-color: white;
-  padding: 0 20px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -465,20 +468,17 @@ q {
   .ReactModal__Content .modal__icon {
     width: 200px; }
   .ReactModal__Content .modal__close {
-    background-image: url("../assets/Close.png");
     display: inline-block;
     position: fixed;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     top: 90px;
     right: 20px; }
     @media (min-width: 960px) {
       .ReactModal__Content .modal__close {
         position: absolute;
-        top: 15px;
-        right: 25px; } }
-    .ReactModal__Content .modal__close:hover {
-      background-image: url("../assets/Close_hover.png"); }
+        top: 40px;
+        right: 40px; } }
 
 .who {
   padding-top: 60px; }

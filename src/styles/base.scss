@@ -364,12 +364,18 @@ q {
   &__icon {
     display: inline-block;
     float: right;
-    margin: 20px;
+    margin: 25px 20px;
 
     img {
-      width: 50px;
+      width: 30px;
     }
 
+    &.open {
+      img {
+        width: 25px;
+        margin: -5px 5px;
+      }
+    }
     @media(min-width: 960px) {
       display: none;
     }

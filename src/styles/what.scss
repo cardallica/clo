@@ -32,7 +32,7 @@
 
   &__Content {
     background-color: white;
-    padding: 0 20px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -53,22 +53,17 @@
       }
 
       &__close {
-        background-image: url("../assets/Close.png");
         display: inline-block;
         position: fixed;
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
         top: 90px;
         right: 20px;
 
         @media(min-width: 960px) {
           position: absolute;
-          top: 15px;
-          right: 25px;
-        }
-
-        &:hover {
-          background-image: url("../assets/Close_hover.png");
+          top: 40px;
+          right: 40px;
         }
       }
     }

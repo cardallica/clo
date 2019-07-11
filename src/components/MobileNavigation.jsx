@@ -1,6 +1,7 @@
 import React, {Fragment} from 'react';
 import { NavLink } from 'react-router-dom';
 import Burger from '../assets/ico_burger.png';
+import Close from '../assets/Close_white.svg';
 
 class MobileNavigation extends React.Component {
   constructor(props) {
@@ -12,20 +13,20 @@ class MobileNavigation extends React.Component {
   }
 
   toggleMenu = () =>
-    this.setState({ isOpen: !this.state.isOpen }, () => {
-      document.body.scrollTop = 0; // For Safari
-      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    });
+    this.setState({ isOpen: !this.state.isOpen });
 
   render() {
+    const {
+      isOpen,
+    } = this.state;
     return (
       <Fragment>
         <div
-          className="mobileNavigation__icon"
+          className={`mobileNavigation__icon ${isOpen ? 'open' : 'close'}`}
           onClick={this.toggleMenu}
         >
           <img
-            src={Burger}
+            src={isOpen ? Close : Burger}
             alt="-"
           />
         </div>

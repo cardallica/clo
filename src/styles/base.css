@@ -276,9 +276,12 @@ q {
 .mobileNavigation__icon {
   display: inline-block;
   float: right;
-  margin: 20px; }
+  margin: 25px 20px; }
   .mobileNavigation__icon img {
-    width: 50px; }
+    width: 30px; }
+  .mobileNavigation__icon.open img {
+    width: 25px;
+    margin: -5px 5px; }
   @media (min-width: 960px) {
     .mobileNavigation__icon {
       display: none; } }

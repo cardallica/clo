@@ -11,41 +11,54 @@ import Individuale from '../assets/what/individuale.png';
 import PMA from '../assets/what/PMA.png';
 import Puerperio from '../assets/what/puerperio.png';
 import Sostegno from '../assets/what/sostegno.png';
-import Close from '../assets/Close.png';
+import Close from '../assets/Close.svg';
+import CloseHover from '../assets/Close_hover.svg';
 
 import { WhatTxts} from '../assets/Texts';
 
 export default class WhatPage extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isModalOpen: false,
+      modalText: undefined,
+      modalTitle: undefined,
+      modalImage: undefined,
+      closeImage: Close,
+    }
+  }
+
+  openModal = (image, title, text) =>
+  this.setState({
+    isModalOpen: true,
+    modalText: text,
+    modalTitle: title,
+    modalImage: image,
+  });
+
+  closeModal = () =>
+  this.setState({
+    isModalOpen: false,
+    modalText: undefined,
+    modalTitle: undefined,
+    modalImage: undefined
+  });
+
+  onMouse
+
   componentDidMount() {
     window.scrollTo(0,0);
   }
 
-  constructor(props) {
-        super(props);
+  onMouseOver = () =>
+    this.setState({
+      closeImage: CloseHover,
+    });
 
-        this.state = {
-            isModalOpen: false,
-            modalText: undefined,
-            modalTitle: undefined,
-            modalImage: undefined
-        }
-    }
-
-    openModal = (image, title, text) =>
-        this.setState({
-            isModalOpen: true,
-            modalText: text,
-            modalTitle: title,
-            modalImage: image,
-        });
-
-    closeModal = () =>
-        this.setState({
-            isModalOpen: false,
-            modalText: undefined,
-            modalTitle: undefined,
-            modalImage: undefined
-        });
+  onMouseLeave = () =>
+    this.setState({
+      closeImage: Close,
+    });
 
 	render() {
 		return (
@@ -145,9 +158,12 @@ export default class WhatPage extends React.Component {
               }}}
           >
             <img
+              alt="x"
               className="modal__close"
-              src={Close}
+              src={this.state.closeImage}
               onClick={this.closeModal}
+              onMouseOver={this.onMouseOver}
+              onMouseLeave={this.onMouseLeave}
             />
             <img
                 src={this.state.modalImage}
