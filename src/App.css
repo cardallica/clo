@@ -449,7 +449,6 @@ q {
 
 .ReactModal__Content {
   background-color: white;
-  border: 1px solid #607FAB;
   padding: 0 20px;
   display: flex;
   flex-direction: column;
@@ -466,7 +465,11 @@ q {
   .ReactModal__Content .modal__icon {
     width: 200px; }
   .ReactModal__Content .modal__close {
+    background-image: url("../assets/Close.png");
+    display: inline-block;
     position: fixed;
+    width: 20px;
+    height: 20px;
     top: 90px;
     right: 20px; }
     @media (min-width: 960px) {
@@ -474,6 +477,8 @@ q {
         position: absolute;
         top: 15px;
         right: 25px; } }
+    .ReactModal__Content .modal__close:hover {
+      background-image: url("../assets/Close_hover.png"); }
 
 .who {
   padding-top: 60px; }

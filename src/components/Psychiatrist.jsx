@@ -12,7 +12,11 @@ const TableRow = ({ title, children }) => (
 );
 
 export default class PhychiatristPage extends React.Component {
-	render() {
+    componentDidMount() {
+        window.scrollTo(0,0);
+    }
+
+    render() {
 		return (
 			<div className="psychiatrist">
 				<div className="topBanner">

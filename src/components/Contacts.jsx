@@ -1,6 +1,10 @@
 import React from 'react';
 
 export default class ContactsPage extends React.Component {
+	componentDidMount() {
+		window.scrollTo(0,0);
+	}
+
 	render() {
 		return (
 			<div className="page contacts">

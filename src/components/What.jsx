@@ -11,11 +11,16 @@ import Individuale from '../assets/what/individuale.png';
 import PMA from '../assets/what/PMA.png';
 import Puerperio from '../assets/what/puerperio.png';
 import Sostegno from '../assets/what/sostegno.png';
+import Close from '../assets/Close.png';
 
 import { WhatTxts} from '../assets/Texts';
 
 export default class WhatPage extends React.Component {
-    constructor(props) {
+  componentDidMount() {
+    window.scrollTo(0,0);
+  }
+
+  constructor(props) {
         super(props);
 
         this.state = {
@@ -134,11 +139,14 @@ export default class WhatPage extends React.Component {
             onRequestClose={this.closeModal}
             contentLabel={this.state.modalTitle}
             className="modal"
+            style={{
+                overlay: {
+                backgroundColor: "rgba(96,127,171, 0.5)",
+              }}}
           >
             <img
               className="modal__close"
-              src=""
-              alt="X"
+              src={Close}
               onClick={this.closeModal}
             />
             <img

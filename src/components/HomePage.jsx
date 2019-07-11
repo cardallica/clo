@@ -24,6 +24,10 @@ const BeltIcon = ({ figure, figCaption }) => (
 );
 
 export default class HomePage extends React.Component {
+	componentDidMount() {
+		window.scrollTo(0,0);
+	}
+
 	render() {
 		return (
 			<div className="homepage">
