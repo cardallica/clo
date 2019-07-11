@@ -29,7 +29,8 @@
   align-items: center;
   position: relative;
   height: 100%;
-  overflow: scroll; }
+  overflow: scroll;
+  outline: 0; }
   @media (min-width: 960px) {
     .ReactModal__Content {
       height: auto;

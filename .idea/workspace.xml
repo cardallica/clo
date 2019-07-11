@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe07dac4-ddb3-463b-9c47-1b142807115c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/contacts.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/contacts.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/contacts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/contacts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/what.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/what.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/what.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/what.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -58,8 +60,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/styles/contacts.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+            <state relative-caret-position="480">
+              <caret line="32" column="14" lean-forward="true" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -411,12 +413,12 @@
       <workItem from="1546500314397" duration="7432000" />
       <workItem from="1546846623940" duration="614000" />
       <workItem from="1562831238610" duration="83000" />
-      <workItem from="1562872208122" duration="7540000" />
+      <workItem from="1562872208122" duration="7636000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49652000" />
+    <option name="totallyTimeSpent" value="49748000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
@@ -639,13 +641,6 @@
     <entry file="file://$PROJECT_DIR$/src/assets/Close_white.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/psychiatrist.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Contacts.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -714,10 +709,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/psychiatrist.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/contacts.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+        <state relative-caret-position="480">
+          <caret line="32" column="14" lean-forward="true" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
         </state>
       </provider>
     </entry>

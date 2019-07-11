@@ -326,12 +326,15 @@ q {
   display: flex;
   flex-direction: column;
   background-color: rgba(227, 240, 248, 0.4);
-  max-width: calc(50% - 30px);
+  width: 100%;
   padding: 40px 20px;
-  margin-top: 60px; }
+  margin: 60px 0; }
   .contacts__mailForm__title {
     font-size: 30px;
     color: #607FAB; }
+  @media (min-width: 960px) {
+    .contacts__mailForm {
+      max-width: calc(50% - 30px); } }
   .contacts__mailForm input,
   .contacts__mailForm textarea {
     display: inline-block;
@@ -508,7 +511,8 @@ q {
   align-items: center;
   position: relative;
   height: 100%;
-  overflow: scroll; }
+  overflow: scroll;
+  outline: 0; }
   @media (min-width: 960px) {
     .ReactModal__Content {
       height: auto;
