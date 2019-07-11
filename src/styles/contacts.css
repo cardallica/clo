@@ -1,9 +1,52 @@
 .contacts.page {
-  padding-top: 30px; }
+  padding-top: 30px;
+  text-align: left; }
   @media (min-width: 960px) {
     .contacts.page {
       padding-top: 60px; } }
+  .contacts.page a {
+    color: #F7B002; }
+    .contacts.page a:hover {
+      color: #FFC842; }
 
 .contacts__list {
   list-style-type: none;
   padding: 0; }
+
+.contacts__mailForm {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(227, 240, 248, 0.4);
+  max-width: calc(50% - 30px);
+  padding: 40px 20px;
+  margin-top: 60px; }
+  .contacts__mailForm__title {
+    font-size: 30px;
+    color: #607FAB; }
+  .contacts__mailForm input,
+  .contacts__mailForm textarea {
+    display: inline-block;
+    font-family: 'Raleway';
+    font-size: 20px;
+    margin-bottom: 30px; }
+  .contacts__mailForm input {
+    height: 50px;
+    padding: 20px;
+    border: 0;
+    color: #607FAB;
+    font-weight: bold; }
+    .contacts__mailForm input::placeholder {
+      font-weight: normal; }
+  .contacts__mailForm textarea {
+    padding: 20px;
+    border: 0;
+    color: #607FAB;
+    font-weight: bold; }
+    .contacts__mailForm textarea::placeholder {
+      font-weight: normal; }
+  .contacts__mailForm a {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 20px;
+    cursor: pointer; }

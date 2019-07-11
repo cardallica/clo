@@ -14,6 +14,8 @@ header {
   background-color: #83A0C5;
   width: 100%;
   z-index: 1; }
+  header.mobileOpen {
+    background-color: #607FAB; }
   @media (min-width: 960px) {
     header nav {
       width: 960px;
@@ -159,12 +161,13 @@ h2 {
   color: #F7B002;
   margin: 0; }
   h2.pageTitle {
-    font-size: 50px;
+    font-size: 36px;
     line-height: 50px;
     padding: 0 20px; }
     @media (min-width: 960px) {
       h2.pageTitle {
-        padding: 0; } }
+        padding: 0;
+        font-size: 50px; } }
 
 h3 {
   font-weight: 800;
@@ -297,6 +300,9 @@ q {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  bottom: 0; }
   .mobileNavigation__menu a {
-    width: 100%; }
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 10px; }

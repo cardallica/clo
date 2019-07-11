@@ -1,4 +1,5 @@
 import React from 'react';
+import MailForm from './MailForm';
 
 export default class ContactsPage extends React.Component {
 	componentDidMount() {
@@ -16,6 +17,7 @@ export default class ContactsPage extends React.Component {
 						<li>Indirizzo: via Matteotti, 1 - Lissone 20851 (MB)</li>
 					</ul>
 				</p>
+				<MailForm to={'robertasalerno@tiscali.it'} />
 			</div>
 		);
 	}

@@ -14,6 +14,8 @@ header {
   background-color: #83A0C5;
   width: 100%;
   z-index: 1; }
+  header.mobileOpen {
+    background-color: #607FAB; }
   @media (min-width: 960px) {
     header nav {
       width: 960px;
@@ -159,12 +161,13 @@ h2 {
   color: #F7B002;
   margin: 0; }
   h2.pageTitle {
-    font-size: 50px;
+    font-size: 36px;
     line-height: 50px;
     padding: 0 20px; }
     @media (min-width: 960px) {
       h2.pageTitle {
-        padding: 0; } }
+        padding: 0;
+        font-size: 50px; } }
 
 h3 {
   font-weight: 800;
@@ -297,19 +300,65 @@ q {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  bottom: 0; }
   .mobileNavigation__menu a {
-    width: 100%; }
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 10px; }
 
 .contacts.page {
-  padding-top: 30px; }
+  padding-top: 30px;
+  text-align: left; }
   @media (min-width: 960px) {
     .contacts.page {
       padding-top: 60px; } }
+  .contacts.page a {
+    color: #F7B002; }
+    .contacts.page a:hover {
+      color: #FFC842; }
 
 .contacts__list {
   list-style-type: none;
   padding: 0; }
+
+.contacts__mailForm {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(227, 240, 248, 0.4);
+  max-width: calc(50% - 30px);
+  padding: 40px 20px;
+  margin-top: 60px; }
+  .contacts__mailForm__title {
+    font-size: 30px;
+    color: #607FAB; }
+  .contacts__mailForm input,
+  .contacts__mailForm textarea {
+    display: inline-block;
+    font-family: 'Raleway';
+    font-size: 20px;
+    margin-bottom: 30px; }
+  .contacts__mailForm input {
+    height: 50px;
+    padding: 20px;
+    border: 0;
+    color: #607FAB;
+    font-weight: bold; }
+    .contacts__mailForm input::placeholder {
+      font-weight: normal; }
+  .contacts__mailForm textarea {
+    padding: 20px;
+    border: 0;
+    color: #607FAB;
+    font-weight: bold; }
+    .contacts__mailForm textarea::placeholder {
+      font-weight: normal; }
+  .contacts__mailForm a {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 20px;
+    cursor: pointer; }
 
 .homepage__title {
   font-size: 30px;
@@ -466,13 +515,14 @@ q {
       overflow: hidden;
       width: 960px; } }
   .ReactModal__Content .modal__icon {
-    width: 200px; }
+    margin: 20px 0 30px;
+    width: 100px; }
   .ReactModal__Content .modal__close {
     display: inline-block;
     position: fixed;
     width: 30px;
     height: 30px;
-    top: 90px;
+    top: 20px;
     right: 20px; }
     @media (min-width: 960px) {
       .ReactModal__Content .modal__close {
