@@ -35,10 +35,10 @@ export default class WhoPage extends React.Component {
 					spingono a mettere in gioco parti di noi.
 					</p>
 					<p>
-					Nel lavoro terapeutico con i miei pazienti, mi propongo, quindi, di creare <strong>connessioni</strong>
+					Nel lavoro terapeutico con i miei pazienti, mi propongo, quindi, di creare <strong>connessioni </strong>
 					 tra il mondo interno  e quello esterno dell'individuo, mantenendo l'interesse verso
 					  i <strong>sistemi di significato</strong> che generano collegamenti tra azioni,
-					   <strong>emozioni</strong> e <strong>relazioni</strong>.
+					   <strong> emozioni</strong> e <strong>relazioni</strong>.
 				  	</p>
 					<p>
 					Inoltre, la mia formazione come <strong>terapeuta EMDR</strong>, mi consente l'utilizzo, in terapia,
@@ -161,6 +161,19 @@ export default class WhoPage extends React.Component {
 							(Gruppo Educazionale Pediatrico Ostetrico) di Milano in cui svolgo
 							corsi di preparazione al parto e percorsi di consulenza,
 							sostegno e psicoterapia individuale o di coppia.
+							</p>
+							</div><h3 className="who__studies__wrapper__year threeColumnWidth">
+							2018
+							</h3>
+							<div className="who__studies__wrapper__activity eightColumnWidth">
+							<p>
+								Da settembre <strong>2018</strong> collaboro con <strong>Humanitas</strong> presso la <strong>Clinica Pio X</strong> in un progetto di prevenzione
+								della depressione post parto e sostegno alla maternità. Oltre ai colloqui con le puerpere della clinica,
+								l'attività prevede colloqui di psicoterapia focale individuale o di coppia in regime ambulatoriale.
+								Inoltre, da luglio 2018, collaboro con l'ospedale <strong>San Gerardo di Monza</strong>: nello specifico, mi
+								occupo del trattamento di sindromi da disadattamento, ansia e depressione, per l'ambulatorio Vademecum;
+								presso l'ambulatorio psichiatrico di Brugherio, invece, svolgo   psicoterapie e colloqui di sostegno per
+								i pazienti affenti al Servizio, in un'ottica integrata con le diverse figure di cura.
 							</p>
 							</div>
 						</div>
