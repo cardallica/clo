@@ -171,8 +171,8 @@ export default class WhoPage extends React.Component {
 								della depressione post parto e sostegno alla maternità. Oltre ai colloqui con le puerpere della clinica,
 								l'attività prevede colloqui di psicoterapia focale individuale o di coppia in regime ambulatoriale.
 								Inoltre, da luglio 2018, collaboro con l'ospedale <strong>San Gerardo di Monza</strong>: nello specifico, mi
-								occupo del trattamento di sindromi da disadattamento, ansia e depressione, per l'ambulatorio Vademecum;
-								presso l'ambulatorio psichiatrico di Brugherio, invece, svolgo   psicoterapie e colloqui di sostegno per
+								occupo del trattamento di sindromi da disadattamento, ansia e depressione, per l'<strong>ambulatorio Vademecum</strong>;
+								presso l'<strong>ambulatorio psichiatrico di Brugherio</strong>, invece, svolgo psicoterapie e colloqui di sostegno per
 								i pazienti affenti al Servizio, in un'ottica integrata con le diverse figure di cura.
 							</p>
 							</div>
